@@ -1,0 +1,8 @@
+.HeaderBox nav a {
+      margin-right: 20px;
+      text-decoration: none;
+      color: black;
+}
+.HeaderBox nav a:hover {
+      color: goldenrod;
+}
