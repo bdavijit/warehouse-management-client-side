@@ -1,7 +1,9 @@
 import React from 'react';
 import useFirebase from '../../Hooks/useFirebase';
+import Banner from '../Banner/Banner';
+import Products from '../Products/Product';
 // import Login from '../Login/Login';
-import mainLogo from '../../Image/banner.jpg';
+
 import "./Home.css"
 
 const Home = () => {
@@ -12,18 +14,10 @@ const Home = () => {
                         Current User is : {user ? user.displayName : 'Vooooot'}
                   </h1>
 
-                  <section className='Banner-Box'>
-                        <div>
-                              <img
-                                    src={mainLogo}
-                                    alt='mainlogo'
-                                    className='My-img-fluid'
-                              />
-                        </div>
-                        <div>
-                              <h1 className='text-center'>Welcome To <br/> IQBAL's Cuisine</h1>
-                        </div>
-                  </section>
+                  <Banner></Banner>
+                  <h1 className='text-center'>Products</h1>
+                  <Products/>
+                  <h1 className='text-center'>Footer</h1>
             </div>
       );
 };

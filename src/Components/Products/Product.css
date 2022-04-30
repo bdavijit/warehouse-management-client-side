@@ -1,0 +1,18 @@
+.ProductBox {
+    
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 3rem;
+      align-items: center;
+      justify-items: center;
+
+      max-width: 90%;
+      margin: auto;
+      padding-top: 15px;
+      /* border: 1px solid #E03B8B; */
+}
+@media only screen and (max-width: 700px) {
+      .ProductBox {
+            grid-template-columns: repeat(1, 1fr);
+      }
+}

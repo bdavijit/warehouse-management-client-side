@@ -1,0 +1,19 @@
+.Banner-Box {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 3rem;
+      align-items: center;
+      justify-items: center;
+      max-width: 90%;
+      margin: 0;
+
+      max-width: 1200px;
+      margin: auto;
+}
+
+
+@media screen and (max-width: 817px) {
+.Banner-Box {
+       grid-template-columns: repeat(1, 1fr);
+}
+}

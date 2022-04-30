@@ -1,10 +1,4 @@
-.Banner-Box {
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      align-items: center;
-      gap: 3rem;
-}
+
 
 .My-img-fluid {
       max-width: 100%;
@@ -12,9 +6,3 @@
       max-height: 100%;
 }
 
-
-@media screen and (max-width: 817px) {
-.Banner-Box {
-    flex-direction: column;
-}
-}
