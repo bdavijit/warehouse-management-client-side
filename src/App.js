@@ -1,3 +1,4 @@
+import 'bootstrap/dist/css/bootstrap.min.css';
 import { Route, Routes } from 'react-router-dom';
 import './App.css';
 import Header from './Components/Header/Heder';
@@ -6,6 +7,7 @@ import Login from './Components/Login/Login';
 import Order from './Components/Orders/Order';
 import Product from './Components/Product/Product';
 import Register from './Components/Register/Register';
+
 
 function App() {
   return (
