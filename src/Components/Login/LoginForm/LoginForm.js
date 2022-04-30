@@ -59,7 +59,7 @@ const LoginForm = () => {
 
                       <p className='text-danger'>{error}</p>
 
-                      <button type='submit' className='btn btn-Main-color'>
+                      <button type='submit' className='btn btn-Main-color w-100'>
                             {registered ? 'Login' : 'Register'}
                       </button>
 
