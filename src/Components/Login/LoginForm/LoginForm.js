@@ -1,5 +1,6 @@
 import React from 'react';
 import useFirebase from '../../../Hooks/useFirebase';
+import "./LoginForm.css";
 
 const LoginForm = () => {
 
@@ -14,7 +15,7 @@ const LoginForm = () => {
           registered,
     } = useFirebase();
     return (
-          <div>
+          <div className='Login-Form'>
                 <h1 className='mb-3'>
                       Please {registered ? 'Login' : 'Register'}!!
                 </h1>
@@ -34,7 +35,7 @@ const LoginForm = () => {
                       <input
                             onBlur={handleEmailBlur}
                             type='email'
-                            placeholder='email'
+                            placeholder='Email'
                             required
                       />
                       <br></br>
@@ -53,27 +54,25 @@ const LoginForm = () => {
                             name=''
                             id=''
                       />
-                      <label> Already registered </label>
+                      <label className='p-2'> Already registered </label>
                       <br></br>
-                 
 
                       <p className='text-danger'>{error}</p>
-                    
 
-                      <button
-                            className='btn btn-link text-decoration-none'
-                            onClick={handlePasswordReset}
-                      >
-                            Forget Password?
-                      </button>
-                      <br></br>
-                      <br></br>
-                      <button type='submit' className='btn btn-primary'>
+                      <button type='submit' className='btn btn-Main-color'>
                             {registered ? 'Login' : 'Register'}
                       </button>
 
                       <br></br>
                 </form>
+
+                <button
+                      type='button'
+                      className='btn btn-link text-decoration-none m-2'
+                      onClick={handlePasswordReset}
+                >
+                      Forget Password?
+                </button>
           </div>
     );
 };

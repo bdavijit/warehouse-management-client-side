@@ -11,7 +11,7 @@ import Register from './Components/Register/Register';
 
 function App() {
   return (
-        <div className='App'>
+        <div className=''>
               <Header></Header>
               <Routes>
                     <Route path='/' element={<Home />}></Route>

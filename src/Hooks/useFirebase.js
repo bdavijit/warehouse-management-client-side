@@ -55,14 +55,19 @@ const useFirebase = () => {
       };
 
       const handlePasswordReset = () => {
-            sendPasswordResetEmail(auth, email).then(() => {
-                  console.log('email sent');
-            });
+            if (!email){
+                  setError('Please type Email');
+            }
+                  sendPasswordResetEmail(auth, email).then(() => {
+                        console.log('email sent');
+                        setError('email sent');
+                  });
       };
 
       const verifyEmail = () => {
             sendEmailVerification(auth.currentUser).then(() => {
                   console.log('Email Verification Sent');
+                  setError('Email Verification Sent');
             });
       };
 

@@ -16,7 +16,12 @@ const Header = () => {
                       <Link to='/Register'>Register</Link>
                       <span>{user?.displayName && user.displayName} </span>
                       {user?.uid ? (
-                            <button onClick={handleSignOut}>sign out</button>
+                            <button
+                                  className='btn-Main-color'
+                                  onClick={handleSignOut}
+                            >
+                                  sign out
+                            </button>
                       ) : (
                             <Link to='/login'>Login</Link>
                       )}
