@@ -1,0 +1,84 @@
+.BlogBox {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 3rem;
+
+  max-width: 1200px;
+  margin: auto;
+  width: 95%;
+}
+.BlogCard {
+  display: flex;
+
+  /* border: 1px solid brown; */
+  border-radius: 10px;
+}
+.flex-item {
+  padding: 10px;
+  flex: 50%;
+}
+.BlogCard-Body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.title-Text {
+  font-size: 2vw;
+  color: #E03B8B;
+  font-weight: bold;
+}
+.p-Text {
+  font-size: 1.5vw;
+}
+
+.My-img-fluid {
+  max-width: 100%;
+  height: auto;
+  max-height: 100%;
+}
+
+.Display-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.BlogBox button {
+  background-color: #ec2183;
+  color: aliceblue;
+  padding: 5px 40px;
+  margin-top: 40px;
+  border-radius: 10px;
+  font-size: 1.5vw;
+  border: 0px;
+}
+.BlogBox button:hover{
+    background-color: #E03B8B;
+}
+
+@media screen and (max-width: 1000px) {
+  .title-Text {
+    font-size: 2.5vw;
+  }
+  .p-Text {
+    font-size: 1.2vw;
+  }
+  button {
+    font-size: 2vw;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .BlogCard {
+    flex-direction: column;
+  }
+  .title-Text {
+    font-size: 3.5vw;
+  }
+  button {
+    font-size: 2.5vw;
+  }
+  .p-Text {
+    font-size: 2.5vw;
+  }
+}

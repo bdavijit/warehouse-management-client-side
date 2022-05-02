@@ -45,7 +45,7 @@ return (
                                                 <NavLink
                                                       className='custom'
                                                       activeClassName='activeStyle'
-                                                      to='/service'
+                                                      to='/blogs'
                                                 >
                                                       Blogs
                                                 </NavLink>
