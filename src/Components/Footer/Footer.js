@@ -11,7 +11,7 @@ let Year = new Date().getFullYear();
                               <span className='Title-Color'>IQBAL's</span>{' '}
                               Cuisine
                         </h1>
-                        <p>copyright © {Year}</p>
+                        <p>copyright  ©  {Year}</p>
                   </footer>
             </>
       );
