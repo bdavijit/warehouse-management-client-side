@@ -1,7 +1,7 @@
 import React from 'react';
 import useFirebase from '../../Hooks/useFirebase';
+import "./Login.css";
 import LoginForm from './LoginForm/LoginForm';
-import "./Login.css"
 
 const Login = () => {
       const { singInWithGoogle } = useFirebase();
