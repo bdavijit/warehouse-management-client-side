@@ -1,5 +1,6 @@
 import React from 'react';
 import { Container, Nav, Navbar, NavDropdown } from 'react-bootstrap';
+import { NavLink } from 'react-router-dom';
 import useFirebase from '../../Hooks/useFirebase';
 import './header2.css';
 
@@ -9,8 +10,9 @@ return (
       <header>
             <Navbar bg='light' expand='lg'>
                   <Container className='NavBox'>
-                        <Navbar.Brand href='#home'>
-                              IQBAL's Cuisine
+                        <Navbar.Brand to='/'>
+                              <span style={{ color: '#e03b8b' }}>IQBAL's</span>{' '}
+                              Cuisine
                         </Navbar.Brand>
                         <div>
                               <Navbar.Toggle aria-controls='basic-navbar-nav' />
@@ -19,26 +21,73 @@ return (
                                     id='basic-navbar-nav'
                               >
                                     <Nav className='me-0'>
-                                          <Nav.Link href='#home'>Home</Nav.Link>
-                                          <Nav.Link href='#link'>Link</Nav.Link>
-                                          <NavDropdown
-                                                title='Name'
-                                                id='basic-nav-dropdown'
-                                          >
-                                                <NavDropdown.Item href='#action/3.1'>
-                                                      Signout
-                                                </NavDropdown.Item>
-                                                <NavDropdown.Item href='#action/3.2'>
-                                                      Another action
-                                                </NavDropdown.Item>
-                                                <NavDropdown.Item href='#action/3.3'>
-                                                      Something
-                                                </NavDropdown.Item>
-                                                <NavDropdown.Divider />
-                                                <NavDropdown.Item href='#action/3.4'>
-                                                      Separated link
-                                                </NavDropdown.Item>
-                                          </NavDropdown>
+                                          <Nav.Link>
+                                                <NavLink
+                                                      className='custom'
+                                                      activeClassName='activeStyle'
+                                                      to='/'
+                                                >
+                                                      Home
+                                                </NavLink>
+                                          </Nav.Link>
+                                          <Nav.Link>
+                                                {' '}
+                                                <NavLink
+                                                      className='custom'
+                                                      activeClassName='activeStyle'
+                                                      to='/product'
+                                                >
+                                                      Products
+                                                </NavLink>
+                                          </Nav.Link>
+                                          <Nav.Link>
+                                                {' '}
+                                                <NavLink
+                                                      className='custom'
+                                                      activeClassName='activeStyle'
+                                                      to='/service'
+                                                >
+                                                      Blogs
+                                                </NavLink>
+                                          </Nav.Link>
+                                          <Nav.Link>
+                                                {' '}
+                                                <NavLink
+                                                      className='custom'
+                                                      activeClassName='activeStyle'
+                                                      to='/service'
+                                                >
+                                                      About
+                                                </NavLink>
+                                          </Nav.Link>
+                                          {user ? (
+                                                <NavDropdown
+                                                      title={
+                                                            user?.displayName &&
+                                                            user.displayName
+                                                      }
+                                                      id='basic-nav-dropdown'
+                                                >
+                                                      <NavDropdown.Item
+                                                            onClick={
+                                                                  handleSignOut
+                                                            }
+                                                      >
+                                                            Logout
+                                                      </NavDropdown.Item>
+                                                </NavDropdown>
+                                          ) : (
+                                                <Nav.Link>
+                                                      {' '}
+                                                      <NavLink
+                                                            className='custom'
+                                                            activeClassName='activeStyle'
+                                                            to='/Login'
+                                                      >
+                                                            Register/Login
+                                                      </NavLink>
+                                                </Nav.Link>
+                                          )}
                                     </Nav>
                               </Navbar.Collapse>
                         </div>

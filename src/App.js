@@ -1,7 +1,7 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Route, Routes } from 'react-router-dom';
 import './App.css';
-import Header from './Components/Header/Heder';
+import Footer from './Components/Footer/Footer';
 import Header2 from './Components/header2/Header2';
 import Home from './Components/Home/Home';
 import Login from './Components/Login/Login';
@@ -14,6 +14,7 @@ import Register from './Components/Register/Register';
 function App() {
   return (
         <div className=''>
+     
               <Header2></Header2>
               <Routes>
                     <Route path='/' element={<Home />}></Route>
@@ -22,6 +23,7 @@ function App() {
                     <Route path='/Register' element={<Register />}></Route>
                     <Route path='/product' element={<Products />}></Route>
               </Routes>
+              <Footer />
         </div>
   );
 }

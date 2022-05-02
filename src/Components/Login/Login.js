@@ -13,7 +13,7 @@ const Login = () => {
                   <div style={{ margin: '20px' }}>
                         <button
                               onClick={singInWithGoogle}
-                              className=' btn-Main-color'
+                              className='btn btn-Main-color'
                               style={{ border: '0' }}
                         >
                               Google Sign In

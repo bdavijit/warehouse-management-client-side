@@ -25,7 +25,7 @@ const ProductCard = (props) => {
                             </p>
                             <h3 className='text-center'>{price}</h3>
                             <button
-                                  className='btn btn-primary w-100 mt-2'
+                                  className='btn btn-Main-color w-100 mt-2'
                                   onClick={showDetail}
                             >
                                   Buy Now

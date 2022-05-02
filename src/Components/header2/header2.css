@@ -1,4 +1,86 @@
-.NavBox{
+.NavBox {
       display: grid;
-      
+}
+
+.activeStyleLogo {
+      font-size: 18px;
+      padding: 5px;
+      border-bottom: 4px solid #e03b8b;
+      transition-duration: 0.3s;
+}
+
+.logo-text-first {
+      color: #e03b8b;
+      font-size: 19px;
+      font-weight: 800;
+}
+
+.logo-text-first:hover {
+      color: #e03b8b;
+}
+
+.logo-text {
+      font-size: 19px;
+      color: goldenrod;
+      font-weight: 700;
+}
+
+.logo-text:hover {
+      color: orange;
+}
+
+.customLogo {
+      text-decoration: none;
+      margin-left: 10px;
+      font-weight: 700;
+}
+
+.customLogo:hover {
+      border-top: 4px solid #e03b8b;
+      border-radius: 3px;
+      padding: 5px;
+      transition-duration: 0.2s;
+}
+.custom {
+      text-decoration: none;
+      color: rgb(66, 64, 64);
+      margin-left: 10px;
+      font-size: 16px;
+}
+
+.custom:hover {
+      color: #E03B8B;
+      border-bottom: 2px solid #E03B8B;
+      padding-bottom: 5px;
+      border-radius: 3px;
+}
+
+.custom-logout {
+      text-decoration: none;
+      color: rgb(245, 243, 243);
+      margin-left: 10px;
+      font-size: 16px;
+      font-weight: 600;
+      background-color: #E03B8B;
+      border: 1px solid rgba(14, 178, 228, 0.795);
+      border-radius: 7px;
+      padding: 8px 20px;
+}
+
+.custom-logout:hover {
+      color: rgb(245, 243, 243);
+      background-color: #E03B8B;
+}
+
+.activeStyle {
+      color: rgba(3, 42, 54, 0.733);
+      padding: 5px;
+      border-bottom: 4px solid goldenrod;
+      border-radius: px;
+      transition-duration: 0.3s;
+}
+
+.header-pic-size {
+      height: 40px;
+      width: 40px;
 }
