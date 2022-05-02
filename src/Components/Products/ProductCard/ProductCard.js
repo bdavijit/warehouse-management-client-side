@@ -11,13 +11,21 @@ const ProductCard = (props) => {
             navigate('/product/' + id);
       };
     return (
-          <div>
+          <div className='ProductCard'>
                 <div>
                       <img className='My-img-fluid' src={image} alt='' />
                 </div>
                 <div>
                       <div className=''>
-                            <h1 className='text-center'>{name}</h1>
+                            <h1
+                                  className='text-center'
+                                  style={{
+                                        color: '#e03b8b'
+                                        
+                                  }}
+                            >
+                                  {name}
+                            </h1>
                             <p className='text-center'>
                                   {detail.length >= 150
                                         ? detail.slice(0, 150) + '....'

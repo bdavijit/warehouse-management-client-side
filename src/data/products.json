@@ -1,13 +1,13 @@
 [
       {
             "id": 1,
-            "name": "Pasta",
-            "price": 60000,
+            "name": "Fettuccine Alfredo",
+            "price": 140,
             "stock": 2,
             "quantity": 1,
             "sell": 2,
-            "detail": "Let your living space live up to your expectations.",
-            "image": "https://static.toiimg.com/thumb/52568357.cms?imgsize=158081&width=800&height=800",
+            "detail": "The dish we know as fettuccine Alfredo was almost fettuccine Ines. According to Italy Magazine, Italian restaurateur Alfredo di Lelio first made the butter and Parmesan pasta dish in 1908 for his wife, Ines, when she struggled to regain her strength after giving birth.",
+            "image": "https://www.eatthis.com/wp-content/uploads/sites/4/2018/12/bowl-of-fettuccine-alfredo.jpg?resize=800,586&quality=82&strip=all",
             "Reviews": [
                   {
                         "Username": "Mishuk",
@@ -67,13 +67,13 @@
       },
       {
             "id": 2,
-            "name": "HATIL Sofa",
-            "price": 60000,
+            "name": "French Fries",
+            "price": 70,
             "stock": 2,
             "quantity": 1,
             "sell": 2,
-            "detail": "Let your living space live up to your expectations.",
-            "image": "https://hatil.com/sites/default/files/Hyperbole-317_0.jpg",
+            "detail": "Though some claim French fries have French origins, National Geographic says the first French fries came from Belgium, where fishermen near the River Meuse began frying potatoes during the long winter months when there wasn't enough fish to fry.",
+            "image": "https://www.eatthis.com/wp-content/uploads/sites/4/2018/02/french-fries-side-ketchup.jpg?resize=800,586&quality=82&strip=all",
             "Reviews": [
                   {
                         "Username": "Mishuk",
@@ -133,13 +133,13 @@
       },
       {
             "id": 3,
-            "name": "HATIL Sofa",
-            "price": 60000,
+            "name": "Beef Stroganoff",
+            "price": 240,
             "stock": 2,
             "quantity": 1,
             "sell": 2,
-            "detail": "Let your living space live up to your expectations.",
-            "image": "https://hatil.com/sites/default/files/Hyperbole-317_0.jpg",
+            "detail": "Beef Stroganoff may have hit peak popularity in America in the 1950s and 1960s, but it's been around far longer than that. The recipe originated in 17th century Russia and gets its name from Count Pavel Alexandrovich Stroganov, a diplomat from the Russian Stroganov family. The count was born in Paris so he would hire French cooks, but he would ask them to add some Russian flair to their dishes as well.",
+            "image": "https://www.eatthis.com/wp-content/uploads/sites/4/2019/02/beef-stroganoff.jpg?resize=800,586&quality=82&strip=all",
             "Reviews": [
                   {
                         "Username": "Mishuk",
@@ -199,13 +199,13 @@
       },
       {
             "id": 4,
-            "name": "HATIL Sofa",
-            "price": 60000,
+            "name": "Reuben",
+            "price": 240,
             "stock": 2,
             "quantity": 1,
             "sell": 2,
-            "detail": "Let your living space live up to your expectations.",
-            "image": "https://hatil.com/sites/default/files/Hyperbole-317_0.jpg",
+            "detail": "Though there's some debate about the Reuben's origins, many believe the sandwich emerged in the 1920s at the Blackstone Hotel in Omaha, Nebraska, where Bernard Schimmel was the chef. Schimmel's granddaughter told Saveur that some poker players at the hotel requested snacks during their game, so Schimmel concocted the corned beef and sauerkraut sandwich for one of the players, Reuben Kulakofsky.",
+            "image": "https://www.eatthis.com/wp-content/uploads/sites/4/2018/12/side-view-reuben-sandwich.jpg?resize=800,586&quality=82&strip=all",
             "Reviews": [
                   {
                         "Username": "Mishuk",
@@ -265,13 +265,13 @@
       },
       {
             "id": 5,
-            "name": "HATIL Sofa",
-            "price": 60000,
+            "name": "Sandwich",
+            "price": 120,
             "stock": 2,
             "quantity": 1,
             "sell": 2,
-            "detail": "Let your living space live up to your expectations.",
-            "image": "https://hatil.com/sites/default/files/Hyperbole-317_0.jpg",
+            "detail": "Reuben comes from, but what about the concept of a sandwich itself? Well, according to PBS, the sandwich is named after 18th-century aristocrat John Montagu, the fourth Earl of Sandwich, who enjoyed eating sliced meats between two pieces of bread.",
+            "image": "https://www.eatthis.com/wp-content/uploads/sites/4/2019/02/sandwich.jpg?resize=800,586&quality=82&strip=all",
             "Reviews": [
                   {
                         "Username": "Mishuk",
@@ -331,13 +331,13 @@
       },
       {
             "id": 6,
-            "name": "HATIL Sofa",
-            "price": 60000,
+            "name": "Waldorf Salad",
+            "price": 180,
             "stock": 2,
             "quantity": 1,
             "sell": 2,
-            "detail": "Let your living space live up to your expectations.",
-            "image": "https://hatil.com/sites/default/files/Hyperbole-317_0.jpg",
+            "detail": "The Waldorf salad, which features apples, celery, grapes, and chopped walnuts over a bed of greens, is named after the establishment that birthed it: the Waldorf-Astoria Hotel in New York City.",
+            "image": "https://www.eatthis.com/wp-content/uploads/sites/4/2019/02/waldorf-salad.jpg?resize=800,586&quality=82&strip=all",
             "Reviews": [
                   {
                         "Username": "Mishuk",

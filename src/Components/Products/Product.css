@@ -1,5 +1,4 @@
 .ProductBox {
-    
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       grid-gap: 3rem;
@@ -10,6 +9,20 @@
       margin: auto;
       padding-top: 15px;
       /* border: 1px solid #E03B8B; */
+}
+.ProductCard{
+      height: 100%;
+      display: grid;
+      align-content: space-between;
+      padding: 20px;
+}
+/* .ProductCard:hover{
+      
+} */
+@media only screen and (max-width: 1000px) {
+      .ProductBox {
+            grid-template-columns: repeat(2, 1fr);
+      }
 }
 @media only screen and (max-width: 700px) {
       .ProductBox {

@@ -11,7 +11,14 @@ return (
             <Navbar bg='light' expand='lg'>
                   <Container className='NavBox'>
                         <Navbar.Brand to='/'>
-                              <span style={{ color: '#e03b8b' }}>IQBAL's</span>{' '}
+                              <span
+                                    style={{
+                                          color: '#e03b8b',
+                                          fontWeight: 'bold',
+                                    }}
+                              >
+                                    IQBAL's
+                              </span>{' '}
                               Cuisine
                         </Navbar.Brand>
                         <div>
@@ -55,7 +62,7 @@ return (
                                                 <NavLink
                                                       className='custom'
                                                       activeClassName='activeStyle'
-                                                      to='/service'
+                                                      to='/About'
                                                 >
                                                       About
                                                 </NavLink>
@@ -67,8 +74,10 @@ return (
                                                             user.displayName
                                                       }
                                                       id='basic-nav-dropdown'
+                                                      
                                                 >
                                                       <NavDropdown.Item
+                                                            id='nav-dropdown'
                                                             onClick={
                                                                   handleSignOut
                                                             }

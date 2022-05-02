@@ -22,7 +22,7 @@ const Checkout = () => {
                                     Checkout
                               </h1>
                               <h2
-                                    className='text-center mt-4'
+                                    className='text-center mt-4 mb-4'
                                     style={{ color: '#E03B8B' }}
                               >
                                     Selected product
@@ -46,7 +46,7 @@ const Checkout = () => {
                               </section>
 
                               <h2
-                                    className='text-center '
+                                    className='text-center mt-4 mb-4'
                                     style={{ color: '#E03B8B' }}
                               >
                                     Customer Details
@@ -110,7 +110,6 @@ const Checkout = () => {
                                           type='submit'
                                           className='btn btn-Main-color w-100'
                                     >
-                                          {' '}
                                           Checkout
                                     </button>
 
@@ -118,7 +117,15 @@ const Checkout = () => {
                               </form>
                         </>
                   ) : (
-                        <Login />
+                        <>
+                              <h1
+                                    className='text-center'
+                                    style={{ color: '#E03B8B' }}
+                              >
+                                    Please login before checkout
+                              </h1>
+                              <Login />
+                        </>
                   )}
             </div>
       );

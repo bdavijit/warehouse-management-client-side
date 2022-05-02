@@ -1,5 +1,5 @@
 import React from 'react';
-import mainLogo from '../../Image/banner3.png';
+import mainLogo from '../../Image/banner4.webp';
 import "./Banner.css"
 
 const Banner = () => {

@@ -1,6 +1,11 @@
 .NavBox {
       display: grid;
 }
+#nav-dropdown:active,
+#nav-dropdown:hover{
+  background-color: #e03b8b ;
+  color: white;
+}
 
 .activeStyleLogo {
       font-size: 18px;
