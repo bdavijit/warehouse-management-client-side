@@ -6,14 +6,14 @@ const Banner = () => {
     return (
           <div>
                 <section className='Banner-Box'>
-                      <div>
+                      <div className='animate__animated animate__fadeInLeft'>
                             <img
                                   src={mainLogo}
                                   alt='mainlogo'
                                   className='My-img-fluid'
                             />
                       </div>
-                      <div>
+                      <div className='animate__animated animate__fadeInRight'>
                             <h1 className='text-center'>
                                   Welcome To <br />{' '}
                                   <span style={{ color: '#e03b8b' }}>

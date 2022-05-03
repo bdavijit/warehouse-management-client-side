@@ -12,7 +12,7 @@ const Home = () => {
             <div>
                   <Banner></Banner>
                   <h1
-                        className='text-center'
+                        className='text-center mt-4'
                         style={{
                               color: '#e03b8b',
                               fontWeight: 'bold',

@@ -1,7 +1,7 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import useProducts from '../../Hooks/useProduct';
+import "./Product.css";
 import ProductCard from './ProductCard/ProductCard';
-import "./Product.css"
 
 
 const Products = () => {

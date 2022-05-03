@@ -11,7 +11,7 @@ const ProductCard = (props) => {
             navigate('/product/' + id);
       };
     return (
-          <div className='ProductCard'>
+          <div className='ProductCard animate__animated animate__fadeInBottomLeft'>
                 <div>
                       <img className='My-img-fluid' src={image} alt='' />
                 </div>
@@ -20,8 +20,7 @@ const ProductCard = (props) => {
                             <h1
                                   className='text-center'
                                   style={{
-                                        color: '#e03b8b'
-                                        
+                                        color: '#e03b8b',
                                   }}
                             >
                                   {name}
