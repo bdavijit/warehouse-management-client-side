@@ -11,9 +11,8 @@
       margin: auto;
 }
 
-
 @media screen and (max-width: 817px) {
-.Banner-Box {
-       grid-template-columns: repeat(1, 1fr);
-}
+      .Banner-Box {
+            grid-template-columns: repeat(1, 1fr);
+      }
 }

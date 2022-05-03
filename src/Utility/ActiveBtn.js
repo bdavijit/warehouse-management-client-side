@@ -14,6 +14,10 @@ function activeBTn(BtnsID, index) {
   // console.log("test");
 
   Button_group[index].className += " active";
+
+  setTimeout(function () {
+        window.scrollTo(0, 0);
+  }, 700);
 }
 
 export { activeBTn };
