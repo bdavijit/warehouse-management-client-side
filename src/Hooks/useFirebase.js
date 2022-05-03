@@ -59,6 +59,7 @@ const useFirebase = () => {
       const handlePasswordReset = () => {
             if (!email){
                    toast('Please type Email');
+                   return;
             }
                   sendPasswordResetEmail(auth, email)
                         .then(() => {

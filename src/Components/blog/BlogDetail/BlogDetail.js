@@ -21,7 +21,7 @@ const BlogDetail = () => {
                     </div>
                     <br></br>
                     <div>
-                          <h1 className='title-Text m-5'>
+                          <h1 className='title-Text m-5 text-center'>
                                 {data[blogId - 1].title}
                           </h1>
                           <p>{data[blogId - 1].detail}</p>

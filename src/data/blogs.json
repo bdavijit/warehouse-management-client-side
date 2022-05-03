@@ -1,62 +1,62 @@
 [
-  {
-    "id": 1,
-    "title": "Context API",
-    "detail": "1. Context API can troubleshoot props drilling. 2. Provides two components - Context.provider context.consumer.  3. usestate, function, object, etc. can be sent by this API. 4. One value at a time. Arrays are used to send multiple values. 5. Only child nodes can access the value",
-    "image": "https://bs-uploads.toptal.io/blackfish-uploads/components/seo/content/og_image_file/og_image/777655/react-context-api-4929b3703a1a7082d99b53eb1bbfc31f.png"
-  },
-  {
-    "id": 2,
-    "title": "HTML Semantic Elements",
-    "detail": "1. It is a part of on-page SEO 2. Developers can find code easily. because it defines the context clearly. 3. Example: <article> , <aside> ,<details> ,<figcaption>, <figure> ,<footer>, <header>, <main>, <mark> , <nav>, <section> ,<summary>, <time> ",
-    "image": "https://dotnettutorials.net/wp-content/uploads/2021/12/word-image-167.png"
-  },
-  {
-    "id": 3,
-    "title": "Elements of Modern Furniture Design",
-    "detail": "Negative Space: You might not think that a lack of material could be a feature, but negative space is one of the elements most emphasized by modern designers. Form, as Louis H. Sullivan put it, should follow function. Any unnecessary shapes are taking up more room than they need to and therefore ",
-    "image": "https://www.sofadreams.com/media/catalog/product/cache/c41fae4236734eb803fb4c6a8d783161/1/8/180214_ravenna_hocker_sandbeige_white_rq_3.jpg"
-  },
-  {
-    "id": 4,
-    "title": "Which is the Best Sofa Brand to Buy Online?",
-    "detail": "We’ve made sure to put together whole collections of this kind of furniture. Know you’re getting a layout that works together. Naturally, you’ll be able to mix and match the colors as much as you want to in order to bring exactly the kind of layout you had in mind to your room. Considering using a little color-matching wisdom to get a better feel for what your layout will ultimately look like",
-    "image": "https://www.sofadreams.com/media/catalog/product/cache/c41fae4236734eb803fb4c6a8d783161/w/a/wall_unit_wohnwand_white_saala_2.jpg"
-  },
-  {
-    "id": 5,
-    "title": " Best Modern Leather Sofas and Sectionals of 2021",
-    "detail": "San Antonio L-Shaped Sectional If you’re looking to build an entire room around a single sectional, then the San Antonio might be the perfect pick for you. It’s got more than enough space for several individuals to rest and relax, which makes it a good pick for homeowners who want to swap out multiple pieces of furniture. It’s also great for those with large single-room apartments or condos.",
-    "image": "https://www.sofadreams.com/media/catalog/product/cache/c41fae4236734eb803fb4c6a8d783161/e/c/eckcouch_mikrofaser_designersofa_modern_ragusa_l_form_beige_m4_1_1.jpg"
-  },
-  {
-    "id": 6,
-    "title": "Fasting Growing Types Of Luxury Sofas",
-    "detail": "Leather sectionals come in several forms. Perhaps the most common are the L and U-shaped sectionals, which appear to have a floor plan that mirrors the look of these letters. Many pieces that are made in these particular styles are now also offered in a fabric form. This has further helped to contribute to their popularity.",
-    "image": "https://www.sofadreams.com/media/catalog/product/cache/c41fae4236734eb803fb4c6a8d783161/w/o/wohnlandschaft_leder_calabria_xl_orange_schwarz_2.jpg"
-  },
-  {
-    "id": 7,
-    "title": "Best Modern Sofas For Hotel Lounges",
-    "detail": "Companies that want to maintain the overall layout of a traditional piece of furniture without sacrificing the luxury and the look of a futuristic ultramodern design can try the Baltimore, which is shaped perfectly for a majority of hotel lounge layouts. Considering that you can order it with a matching table, you shouldn’t have any difficulty incorporating it into an existing room. ",
-    "image": "http://cdn.home-designing.com/wp-content/uploads/2017/08/stylish-sofas-600x600.jpg"
-  },
-  {
-    "id": 8,
-    "title": "Futuristic Living Room Ideas + Inspiration",
-    "detail": "Take a look at the space that your living room takes up and imagine what you might be able to do with it if it were completely empty. More than likely, your mind’s eyes have quickly turned to a rather unique color pallet, especially if you’re drawing any inspiration from the retro futuristic themes that have become so popular. Try using our custom Sofa Configurator App if you’re trying to envision what sort of furniture might work best.",
-    "image": "https://i.pinimg.com/originals/4f/79/90/4f799057143aa8c9025ac7d90748e8c3.jpg"
-  },
-  {
-    "id": 9,
-    "title": "5 THINGS TO THINK ABOUT WHEN CHOOSING A SOFA",
-    "detail": "This is a very important thing to think about when choosing a sofa, as it’s crucial to ensure your new sofa will suit the style and decor of the room it’s going into. If your room is traditionally styled, you’ll want to go with a sofa to match. If you have a modern home, contemporary sofas will fit in to the surroundings giving the room a sleek look.The Fabric you choose for your next sofa is arguably equally as important as the styling. Do you have a specific preference for leather sofas, or perhaps tweed – fabric is a big factor in whether or not a sofa is right for you.",
-    "image": "https://www.furniture-barn.co.uk/live/blogs/sofa%20blog%201.jpg"
-  },
-  {
-    "id": 10,
-    "title": "Couches for Sports Fans",
-    "detail": "Discerning New Orleans Saints fans will appreciate the Detroit leather sectional with integrated LED mood lighting. Its perfect gold color might also attract those who love Notre Dame or Alcorn State.The Oakland Raiders have perhaps one of the most noticeable looks, dating back to the days of Al Davis, John Madden and their unique way of managing the team. The team redefined itself so that Oakland locals could take pride in their silver and black.The Cincinnati Reds are a beloved team for baseball fans. They became the Big Red Machine in the 1970s and made quite a comeback in the National League. Fans love to wear the trademark shades.",
-    "image": "https://media.istockphoto.com/photos/the-young-man-is-watching-a-sports-game-on-tv-picture-id1036943526?k=20&m=1036943526&s=612x612&w=0&h=4-ZJUUEFE9ZYwjPAV9NRgkSMzg6Mm8WrmlALo6Yen8c="
-  }
+      {
+            "id": 1,
+            "title": "Authentication vs Authorization",
+            "detail": "Authentication: 1.  Authentication verifies the normal user. , 2. Authentication works through passwords, OTP, Email verification etc., 3. Authentication is the first step of an identity user ,4. Authentication information can change by the user. ,5. Ex: when we login our website <br /> Authorization: 1. Authorization determines what resources a user can access and manipulate. , 2. Authorization works through settings, which are defined by the organization. EX: Sometimes PC IP Address can define the Admin. , 3. Authorization always happens after authentication.  , 4. Authorization information cannot change by the user. It can just be changed by System Admin., 5. Ex: When programming hero Admins are access to our Website.",
+            "image": "https://blog.restcase.com/content/images/2019/07/website-authentication-authorization.png"
+      },
+      {
+            "id": 2,
+            "title": "Why are you using firebase?",
+            "detail": "1. Easy to use. , 2. Security provided by google., 3. It uses the NoSQL database. That’s why it works so fast., 4. Firebase is not platform-oriented. That’s why easily shifted from web to mobile app., 5. It works offline and Updates data when the internet Will on., 6. SSD and CDN backed hosting system send content very fast., 7. Free star is useful for new programmers. They can test and then use it. after use a limit of data then google charges from us., 8. Google Analytics help us analyze user behavior. 52 major ads tool like google ads, AdMob etc allies with firebase. firebase alternatives are - Ex: Parse, Back4App, AWS Amplify, Kuzzle, Couchbase, NativeScript , RxDB etc",
+            "image": "https://firebase.google.com/images/social.png"
+      },
+      {
+            "id": 3,
+            "title": " What other services does firebase provide other than authentication",
+            "detail": "Google Analytics : Provide user behaviours  and google ads and other 51 ads service, Cloud Functions: Run mobile app backend code without server, Cloud Firestore : store users data , Hosting : Fast and secure web hosting , Cloud Storage : provide storage for content, Predictions, Cloud Messaging: cross-platform messaging solution, which is use for send promotional and other message without any cost.",
+            "image": "https://blog.back4app.com/wp-content/uploads/2022/03/Firebase-Open-Source-Alternatives-1024x731.png"
+      },
+      {
+            "id": 4,
+            "title": "Turkish pizza with spiced pomegranate beef & feta",
+            "detail": "STEP 1 Mix the dough following pack instructions (leave about 2 tbsp of the bread mix in the bag for dusting and rolling out later). Knead for 8-10 mins, then coat the dough in oil, place in a large bowl and cover. Leave to rise until doubled in size. The warmer your kitchen is, the faster it will rise, but generally it should take 1-2 hrs. STEP 2 Heat oven to 240C/220C fan/gas 9 (or the highest setting). Sprinkle 2 baking trays with a little of the reserved flour and place in the oven to heat up. STEP 3 Heat the olive oil in a large frying pan until hot. Add the onions and garlic, and cook for a few mins until softened. Add the beef and let it brown for about 5 mins, breaking up the mince as it cooks. Pour off any excess oil. Add the spices, chilli, 2 tbsp of the tomato purée, 5 tbsp of the pomegranate molasses and some seasoning. Cook for 1 min, then remove from the heat.STEP 4 Divide the dough into 6 balls. Sprinkle the remaining flour over a work surface and roll out the dough, each to about 25cm across. Remove the trays from the oven and place 2 pizza bases on each (you’ll need to cook in batches). Spread the remaining tomato purée on each base. Top with the meat mixture, peppers, feta and pine nuts. Cook for 10 mins or until the bases are cooked through and golden brown around the edges. Drizzle over the remaining pomegranate molasses and serve.",
+            "image": "https://images.immediate.co.uk/production/volatile/sites/30/2020/08/turkishpizza-6d6af5f.jpg?quality=90&webp=true&resize=375,341"
+      },
+      {
+            "id": 5,
+            "title": " Spiced lamb & feta gozleme with special tomato sauce",
+            "detail": "STEP 1 For the dough, mix the yeast, sugar and 175ml lukewarm water in a small bowl. Stir to dissolve the yeast, then set aside for 10 mins, or until the liquid starts to froth. STEP 2 Mix the flour with ½ tsp salt in a big bowl. Make a well in the centre, pour in the yeasty mixture and olive oil, and mix to a dough. Knead for 10 mins, then put the dough in a lightly oiled bowl and cover with oiled cling film. Leave somewhere quite warm until doubled in size. STEP 3 Meanwhile, make the filling. Heat the oil in a frying pan, add the mince and fry, breaking up lumps as you go, until well browned. Stir in the garlic, spices and raisins, and fry for a few more mins, then turn off the heat and stir in the lemon zest, spring onions, pine nuts and seasoning. Set aside to cool a little. STEP 4 Divide the dough into 4. Working a piece at a time, roll out on a lightly floured surface to 25 x 30cm, without the dough splitting. With a long edge of the pastry laying in front of you, spoon ¼ of the mince on the bottom half – leaving a 2cm border all round. Crumble over ¼ of the feta. Fold the other half of the dough over the filling, folding in and pinching the edges to seal in the lamb. Repeat with the remaining ingredients.STEP 5 Heat a large frying pan over a high heat and brush the gozleme all over with oil. STEP 6 Cook in batches for 3-5 mins on each side, or until golden and heated through. Quickly mix the tomato ketchup, pomegranate and onion, and serve with the hot, crispy gozleme.",
+            "image": "https://images.immediate.co.uk/production/volatile/sites/30/2020/08/recipe-image-legacy-id-1309456_3-2dac7ef.jpg?quality=90&webp=true&resize=375,341"
+      },
+      {
+            "id": 6,
+            "title": "Imam bayildi with BBQ lamb & tzatziki",
+            "detail": "STEP 1 Heat oven to 190C/170C fan/gas 5. Halve the aubergines lengthways and score the flesh side deeply, brush with a good layer of olive oil and put on a baking sheet. Roast for 20 mins or until the flesh is soft enough to scoop out. STEP 2 Fry the onion in a little oil until soft, add the garlic and cinnamon and fry for 1 min. Once the aubergines are cool enough to handle, scoop out the centres. Roughly chop the flesh and add it to the onions. Halve the tomatoes, scoop the seeds and juice into a sieve set over a bowl, then chop the flesh. Add the chopped tomatoes to the pan and cook everything for 10 mins until nice and soft. Add a little more oil if you need to. Stir in the parsley, leaving a little for scattering at the end. STEP 3 Lay the aubergine halves in a baking dish and divide the tomato mixture between them. Pour over the juice from the tomatoes, drizzle with more olive oil and bake for 30 mins until the aubergines have collapsed. STEP 4 Meanwhile, mix the tzatziki ingredients together and put in a small serving bowl. STEP 5 Season the lamb with salt, black pepper and a pinch of paprika. Griddle, grill or barbecue for 3 mins on each side or until the fat is nicely browned, then put in a serving dish and squeeze over the lemon halves. Scatter the aubergines with parsley, then serve with the lamb and tzatziki.",
+            "image": "https://images.immediate.co.uk/production/volatile/sites/30/2020/08/recipe-image-legacy-id-356518_11-edb81df.jpg?quality=90&webp=true&resize=375,341"
+      },
+      {
+            "id": 7,
+            "title": "Turkish one-pan eggs & peppers (Menemen)",
+            "detail": "STEP 1 Heat the oil in a heavy-based frying pan. Stir in the onions, pepper and chillies. Cook until they begin to soften. Add the tomatoes and sugar, mixing well. Cook until the liquid has reduced, season. STEP 2 Using a wooden spoon, create 4 pockets in the tomato mixture and crack the eggs into them. Cover the pan and cook the eggs over a low heat until just set. STEP 3 Beat the yogurt with the garlic and season. Sprinkle the menemen with parsley and serve from the frying pan with a dollop of the garlic-flavoured yogurt. ",
+            "image": "https://images.immediate.co.uk/production/volatile/sites/30/2020/08/recipe-image-legacy-id-1201531_11-80800f0.jpg?quality=90&webp=true&resize=375,341"
+      },
+      {
+            "id": 8,
+            "title": "Grilled aubergines with spicy chickpeas & walnut sauce",
+            "detail": "STEP 1 Heat 2 tbsp oil in a pan, add the onion and fry until soft and lightly browned, about 10 mins. Add the chilli, ginger and spices and mix well. Stir in the chickpeas, tomatoes and 5 tbsp water, bring to the boil, then simmer for 10 mins. Add a little salt and pepper and the lemon juice. STEP 2 Arrange the aubergines over a grill pan. Brush lightly with oil, sprinkle with salt and pepper, then grill until golden. Flip them over, brush again with oil, season and grill again until tender and golden. STEP 3 Mix the yogurt with the garlic, most of the walnuts and coriander and a little salt and pepper. Arrange the aubergine slices over a warm platter and spoon over the chickpea mix. Drizzle with the walnut sauce and scatter with the remaining walnuts and coriander.",
+            "image": "https://images.immediate.co.uk/production/volatile/sites/30/2020/08/recipe-image-legacy-id-219528_11-95d4cab.jpg?quality=90&webp=true&resize=375,341"
+      },
+      {
+            "id": 9,
+            "title": "DIY kofta burgers",
+            "detail": "STEP 1 Tip the mince into a large bowl (use a clean washing-up bowl if you don’t have anything big enough) with all the other burger ingredients and a good pinch of salt. Roll up your sleeves, get your hands into the mix and squelch everything together through your fingers until completely mixed. Pat the mix into 16 small burgers. These may now be frozen for up to 1 month or chilled up to a day ahead. STEP 2 To cook, heat grill to its highest setting and lay the burgers in a single layer on a baking tray (you may need to do this in batches, depending on how big your tray is). Grill on the highest shelf for 5-6 mins on each side until browned and cooked through. Pile burgers onto a platter and serve with all the accompaniments, so everyone can construct their own sandwich.",
+            "image": "https://images.immediate.co.uk/production/volatile/sites/30/2020/08/recipe-image-legacy-id-424790_11-d0de898.jpg?quality=90&webp=true&resize=375,341"
+      },
+      {
+            "id": 10,
+            "title": "Hot cumin lamb wrap with crunchy slaw & spicy mayo",
+            "detail": "STEP 1 Heat a griddle pan. Rub the lamb steaks with the oil, cumin and some seasoning. Griddle for about 3-4 mins on each side or until cooked to your liking. Place to one side on a plate to rest. STEP 2 In a large bowl, stir the sugar into the vinegar until dissolved. Add the carrots, spring onions, cabbage and some seasoning, and toss together. STEP 3 Blitz the whole peppers and the mayo in a food processor. Add a heap of the salad to each flatbread. Slice the lamb, trimming off any excess fat and lay on top of the salad, drizzling with the resting juices. Spoon over the mayo and scatter with a few of the sliced peppers. Roll up and eat. If using pitta, split and stuff. Serve any extra salad on the side",
+            "image": "https://images.immediate.co.uk/production/volatile/sites/30/2020/08/recipe-image-legacy-id-1031455_10-b76d9d0.jpg?quality=90&webp=true&resize=375,341"
+      }
 ]
