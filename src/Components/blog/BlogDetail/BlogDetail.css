@@ -1,38 +1,38 @@
 .blogDetails {
-  max-width: 1200px;
-  margin: auto;
+      max-width: 1200px;
+      margin: auto;
 }
 
 .title-Text {
-  font-size: 2vw;
-  color: #E03B8B;
-  font-weight: bold;
+      font-size: 2vw;
+      color: #e03b8b;
+      font-weight: bold;
 }
 .My-img-fluid {
-  max-width: 100%;
-  height: auto;
-  max-height: 100%;
+      max-width: 100%;
+      height: auto;
+      max-height: 100%;
 }
 
 .p-Text {
-  font-size: 1.5vw;
+      font-size: 1.5vw;
 }
 
 @media screen and (max-width: 1000px) {
-  .title-Text {
-    font-size: 2.5vw;
-  }
-  .p-Text {
-    font-size: 1.2vw;
-  }
+      .title-Text {
+            font-size: 2.5vw;
+      }
+      .p-Text {
+            font-size: 1.2vw;
+      }
 }
 
 @media screen and (max-width: 900px) {
-  .title-Text {
-    font-size: 16px;
-  }
+      .title-Text {
+            font-size: 16px;
+      }
 
-  .p-Text {
-    font-size: 12px;
-  }
+      .p-Text {
+            font-size: 12px;
+      }
 }

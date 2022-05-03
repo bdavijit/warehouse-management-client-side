@@ -11,7 +11,7 @@ const BlogDetail = () => {
 
   return (
         <>
-              <section className='blogDetails'>
+              <section className='blogDetails  animate__animated animate__bounceInUp'>
                     <div className='d-flex justify-content-center'>
                           <img
                                 className='My-img-fluid '

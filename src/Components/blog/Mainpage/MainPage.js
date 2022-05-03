@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
-import BlogCard from "../BlogCard";
-import "./style.css";
-import "./activebtn.css";
 import useBlogs from "../../../Hooks/useBlogs";
 import { activeBTn } from "../../../Utility/ActiveBtn";
+import BlogCard from "../BlogCard";
+import "./activebtn.css";
+import "./style.css";
 
 const MainPage = () => {
   const [DisplayBlog, SetDisplayBlog] = useState([]);

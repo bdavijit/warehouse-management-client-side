@@ -11,7 +11,7 @@ const ProductCard = (props) => {
             navigate('/product/' + id);
       };
     return (
-          <div className='ProductCard animate__animated animate__fadeInBottomLeft'>
+          <div className='ProductCard animate__animated animate__zoomInUp'>
                 <div>
                       <img className='My-img-fluid' src={image} alt='' />
                 </div>

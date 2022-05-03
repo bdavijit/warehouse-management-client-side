@@ -3,8 +3,8 @@ import React from 'react';
 import Banner from '../Banner/Banner';
 import Map from '../Map/Map';
 import Products from '../Products/Product';
+import "./Home.css";
 
-import "./Home.css"
 
 const Home = () => {
       // const { user } = useFirebase();
