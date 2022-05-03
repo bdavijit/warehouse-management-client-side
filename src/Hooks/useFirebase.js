@@ -11,6 +11,8 @@ import {
       updateProfile
 } from 'firebase/auth';
 import { useEffect, useState } from 'react';
+ import {  toast } from 'react-toastify';
+ import 'react-toastify/dist/ReactToastify.css';
 import app from '../firebase.init';
 
 const auth = getAuth(app);
@@ -56,12 +58,16 @@ const useFirebase = () => {
 
       const handlePasswordReset = () => {
             if (!email){
-                  setError('Please type Email');
+                   toast('Please type Email');
             }
-                  sendPasswordResetEmail(auth, email).then(() => {
-                        console.log('email sent');
-                        setError('email sent');
-                  });
+                  sendPasswordResetEmail(auth, email)
+                        .then(() => {
+                              console.log('email sent');
+                              toast('email sent');
+                        })
+                        .catch((error) => {
+                              toast(error.message);
+                        });
       };
 
       const verifyEmail = () => {

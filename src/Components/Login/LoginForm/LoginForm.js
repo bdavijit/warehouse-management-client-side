@@ -1,6 +1,8 @@
 import React from 'react';
 import useFirebase from '../../../Hooks/useFirebase';
 import "./LoginForm.css";
+ import { ToastContainer } from 'react-toastify';
+ import 'react-toastify/dist/ReactToastify.css';
 
 const LoginForm = () => {
 
@@ -83,6 +85,7 @@ const LoginForm = () => {
                 >
                       Forget Password?
                 </button>
+                <ToastContainer />
           </div>
     );
 };
