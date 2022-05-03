@@ -1,3 +1,4 @@
+import { isDisabled } from '@testing-library/user-event/dist/utils';
 import React, { useState } from 'react';
 import { Form } from 'react-bootstrap';
 import { useParams } from 'react-router-dom';
@@ -11,13 +12,19 @@ const Checkout = () => {
       console.log(data);
       console.log(ProductId);
       const { user } = useFirebase();
-      const [Information , setInformation ] = useState("");
+      const [Information, setInformation] = useState('');
+      const [paymentBox , setPaymentBOx] =useState(false);
 
-     const HandelCheckout = (event) =>{
-           event.preventDefault();
-           window.scrollTo(0, 0);
-           setInformation('Successfully Place Your Order');
-     }
+  const handlePaymentChange = (event) => {
+            setPaymentBOx(event.target.checked);
+            console.log(event.target.checked);
+      };
+
+      const HandelCheckout = (event) => {
+            event.preventDefault();
+            window.scrollTo(0, 0);
+            setInformation('Successfully Place Your Order');
+      };
 
       return (
             <div>
@@ -96,6 +103,7 @@ const Checkout = () => {
                                                             placeholder='Address'
                                                             rows='4'
                                                             cols='50'
+                                                            required
                                                       ></textarea>
                                                       <br></br>
                                                       <br></br>
@@ -119,6 +127,9 @@ const Checkout = () => {
                                                                                           type
                                                                                     }
                                                                                     id={`inline-${type}-1`}
+                                                                                    onChange={
+                                                                                          handlePaymentChange
+                                                                                    }
                                                                               />
                                                                               <Form.Check
                                                                                     inline
@@ -128,6 +139,9 @@ const Checkout = () => {
                                                                                           type
                                                                                     }
                                                                                     id={`inline-${type}-2`}
+                                                                                    onChange={
+                                                                                          handlePaymentChange
+                                                                                    }
                                                                               />
 
                                                                               <Form.Check
@@ -138,6 +152,9 @@ const Checkout = () => {
                                                                                           type
                                                                                     }
                                                                                     id={`inline-${type}-3`}
+                                                                                    onChange={
+                                                                                          handlePaymentChange
+                                                                                    }
                                                                               />
                                                                         </div>
                                                                   )
@@ -145,13 +162,22 @@ const Checkout = () => {
                                                       </Form>
                                                 </section>
                                                 <br></br>
-                                                <button
-                                                      type='submit'
-                                                      className='btn btn-Main-color w-100'
-                                                      onClick={HandelCheckout}
-                                                >
-                                                      Checkout
-                                                </button>
+                                                {paymentBox ? (
+                                                      <button
+                                                            type='submit'
+                                                            className='btn btn-Main-color w-100'
+                                                      >
+                                                            Checkout
+                                                      </button>
+                                                ) : (
+                                                      <button
+                                                            type='submit'
+                                                            className='btn btn-Main-color w-100'
+                                                            disabled
+                                                      >
+                                                            Checkout
+                                                      </button>
+                                                )}
 
                                                 <br></br>
                                           </form>
