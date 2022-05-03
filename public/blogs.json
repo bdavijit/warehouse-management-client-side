@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "title": "Context API",
+    "title": "cgc",
     "detail": "1. Context API can troubleshoot props drilling. 2. Provides two components - Context.provider context.consumer.  3. usestate, function, object, etc. can be sent by this API. 4. One value at a time. Arrays are used to send multiple values. 5. Only child nodes can access the value",
     "image": "https://bs-uploads.toptal.io/blackfish-uploads/components/seo/content/og_image_file/og_image/777655/react-context-api-4929b3703a1a7082d99b53eb1bbfc31f.png"
     

@@ -18,10 +18,10 @@ const About = () => {
                                 className='text-center'
                                 style={{ color: '#E03B8B' }}
                           >
-                                Iqbal Mahmud
+                                Avijit Kundu
                           </h1>
-                          <p className='text-center'>bdIqbal07@gmail.com</p>
-                          <p className='text-center'>01674566999</p>
+                          <p className='text-center'>bdavijit01@gmail.com</p>
+                          <p className='text-center'>01674566999999</p>
                     </div>
 
                     <div className='animate__animated animate__fadeInLeft'>
@@ -31,7 +31,7 @@ const About = () => {
                           >
                                 Goal
                           </h1>
-                          <p className='text-center'>
+                          <p className='text-center mb-4'>
                                 I want to be a web developer, especially for
                                 Home jobs / Businesses ( related to websites)
                           </p>
@@ -39,23 +39,17 @@ const About = () => {
                                 style={{ color: '#E03B8B' }}
                                 className='text-center'
                           >
-                                Vision
+                                How I will work hard to achieve my goal.
                           </h1>
                           <p>
-                                To help elevate the lifestyle and living of
-                                people in general with our Innovations,
-                                Creations and Business Practices
+                                1. I design 10 project plans, I will finish
+                                these projects in 2 months. 2. Every day I will
+                                visit to at least three website 3. Time
+                                management is the biggest challenge for me. I
+                                should manage more effective time. 4. More
+                                practice.
                           </p>
-                          <h1
-                                style={{ color: '#E03B8B' }}
-                                className='text-center'
-                          >
-                                Mission
-                          </h1>
-                          <p>
-                                To stay contemporary and contextual being
-                                innovative and cutting-edge
-                          </p>
+
                     </div>
                     <div className='animate__animated animate__fadeInRight'>
                           <img

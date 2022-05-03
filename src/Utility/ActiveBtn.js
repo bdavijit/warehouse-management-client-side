@@ -17,7 +17,7 @@ function activeBTn(BtnsID, index) {
 
   setTimeout(function () {
         window.scrollTo(0, 0);
-  }, 700);
+  }, 500);
 }
 
 export { activeBTn };
