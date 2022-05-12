@@ -8,7 +8,7 @@ const ProductCard = (props) => {
 
       const navigate = useNavigate();
       const showDetail = () => {
-            navigate('/product/' + _id);
+            navigate('/inventory/' + _id);
       };
     return (
           <div className='ProductCard animate__animated animate__zoomInUp'>
@@ -35,7 +35,7 @@ const ProductCard = (props) => {
                                   className='btn btn-Main-color w-100 mt-2'
                                   onClick={showDetail}
                             >
-                                  Buy Now
+                                  update
                             </button>
                       </div>
                 </div>

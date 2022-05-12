@@ -1,13 +1,20 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import data from "../../../data/blogs.json";
 import Map from "../../Map/Map";
 import "./BlogDetail.css";
 
 const BlogDetail = () => {
   const { blogId } = useParams();
-  console.log(data);
-  console.log(data[blogId - 1].image);
+  const [blogs, SetBlogs] = useState([]);
+
+  useEffect(() => {
+        fetch('http://localhost:5001/blogs')
+              .then((res) => res.json())
+              .then((data) => {
+                    console.log(data);
+                    SetBlogs(data);
+              });
+  }, []);
 
   return (
         <>
@@ -15,16 +22,16 @@ const BlogDetail = () => {
                     <div className='d-flex justify-content-center'>
                           <img
                                 className='My-img-fluid '
-                                src={data[blogId - 1].image}
+                                src={blogs[blogId - 1]?.image}
                                 alt=''
                           />
                     </div>
                     <br></br>
                     <div>
                           <h1 className='title-Text m-5 text-center'>
-                                {data[blogId - 1].title}
+                                {blogs[blogId - 1]?.title}
                           </h1>
-                          <p>{data[blogId - 1].detail}</p>
+                          <p>{blogs[blogId - 1]?.detail}</p>
                     </div>
                     <br></br>
                     <br></br>
