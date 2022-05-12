@@ -4,11 +4,11 @@ import "./ProductCard.css"
 
 const ProductCard = (props) => {
   
-    const { id, image, name, price, detail } = props?.Product;
+    const {_id, name, image , description, price } = props?.Product;
 
       const navigate = useNavigate();
       const showDetail = () => {
-            navigate('/product/' + id);
+            navigate('/product/' + _id);
       };
     return (
           <div className='ProductCard animate__animated animate__zoomInUp'>
@@ -26,9 +26,9 @@ const ProductCard = (props) => {
                                   {name}
                             </h1>
                             <p className='text-center'>
-                                  {detail.length >= 150
-                                        ? detail.slice(0, 150) + '....'
-                                        : detail.slice(0, 150)}
+                                  {description.length >= 150
+                                        ? description.slice(0, 150) + '....'
+                                        : description.slice(0, 150)}
                             </p>
                             <h3 className='text-center'>{price}</h3>
                             <button

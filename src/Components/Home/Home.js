@@ -2,7 +2,7 @@ import React from 'react';
 // import useFirebase from '../../Hooks/useFirebase';
 import Banner from '../Banner/Banner';
 import Map from '../Map/Map';
-import Products from '../Products/Product';
+import HomeProduct from '../Products/HomeProduct';
 import "./Home.css";
 
 
@@ -20,7 +20,7 @@ const Home = () => {
                   >
                         Products
                   </h1>
-                  <Products />
+                  <HomeProduct />
                   <Map />
             </div>
       );

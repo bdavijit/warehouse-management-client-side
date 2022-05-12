@@ -4,12 +4,12 @@ const useProducts = () => {
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
-    fetch("products.json")
-      .then((res) => res.json())
-      .then((data) => {
-        console.log(data);
-        setProducts(data);
-      });
+    fetch('http://localhost:5001/products')
+          .then((res) => res.json())
+          .then((data) => {
+                console.log(data);
+                setProducts(data);
+          });
   }, []);
 
   return [products, setProducts];
