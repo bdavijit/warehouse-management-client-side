@@ -17,9 +17,9 @@ const Banner = () => {
                             <h1 className='text-center'>
                                   Welcome To <br />{' '}
                                   <span style={{ color: '#e03b8b' }}>
-                                        IQBAL's
+                                        Grocery
                                   </span>{' '}
-                                  Cuisine
+                                  HUB
                             </h1>
                       </div>
                 </section>

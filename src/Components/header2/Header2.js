@@ -17,9 +17,9 @@ return (
                                           fontWeight: 'bold',
                                     }}
                               >
-                                    IQBAL's
+                                    Grocery
                               </span>{' '}
-                              Cuisine
+                              HUB
                         </Navbar.Brand>
                         <div>
                               <Navbar.Toggle aria-controls='basic-navbar-nav' />
@@ -74,7 +74,6 @@ return (
                                                             user.displayName
                                                       }
                                                       id='basic-nav-dropdown'
-                                                      
                                                 >
                                                       <NavDropdown.Item
                                                             id='nav-dropdown'

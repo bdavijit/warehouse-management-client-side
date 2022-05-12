@@ -8,10 +8,10 @@ let Year = new Date().getFullYear();
             <>
                   <footer className='FooterBox'>
                         <h1>
-                              <span className='Title-Color'>IQBAL's</span>{' '}
-                              Cuisine
+                              <span className='Title-Color'>Grocery</span>{' '}
+                              HUB
                         </h1>
-                        <p>copyright  ©  {Year}</p>
+                        <p>copyright © {Year}</p>
                   </footer>
             </>
       );
