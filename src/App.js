@@ -15,6 +15,7 @@ import Products from './Components/Products/Product';
 import Error from './Components/Error/Error';
 import Inventory from './Components/inventory/inventory';
 import ManageInventories from './Components/Manage Inventories/ManageInventories';
+import AddNew from './Components/AddProduct/AddNew';
 
 
 
@@ -40,6 +41,7 @@ function App() {
                           path='/ManageInventories'
                           element={<ManageInventories />}
                     ></Route>
+                    <Route path='/Add_new' element={<AddNew />}></Route>
 
                     <Route path='/blogs' element={<MainPage />} />
                     <Route
