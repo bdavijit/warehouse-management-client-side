@@ -16,6 +16,9 @@ const Inventory = () => {
                 .then((data) => set_Products(data));
     }, []);
 
+
+
+
          const handelDelivered = () =>{
                if (Products?.quantity > 0){
                      set_Products((previousState) => {
@@ -24,10 +27,24 @@ const Inventory = () => {
                                  quantity: Products?.quantity - 1,
                            };
                      });
+
+                    
+
+                     // send data to the server
+                     const url = `http://localhost:5001/Product/${Id}`;
+                     fetch(url, {
+                           method: 'PUT',
+                           headers: {
+                                 'content-type': 'application/json',
+                           },
+                           body: JSON.stringify(Products),
+                     })
+                           .then((res) => res.json())
+                           .then((data) => {
+                                 console.log('success', data);
+                                 alert('users added successfully!!!');
+                           });
                }
-
-
-
          }
 
       return (
