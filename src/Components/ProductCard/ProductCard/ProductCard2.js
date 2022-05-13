@@ -1,7 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import useFirebase from '../../../Hooks/useFirebase';
-import Login from '../../Login/Login';
 import './ProductCard2.css';
 
 const ProductCard2 = (props) => {
@@ -29,6 +28,7 @@ const ProductCard2 = (props) => {
                                     );
                                     props.SetProducts(remaining);
                               }
+                              alert("ok")
                         });
             }
       };
@@ -36,7 +36,7 @@ const ProductCard2 = (props) => {
       return (
             <>
                   {user && user?.displayName === supplier_name ? (
-                        <div className='ProductCard animate__animated animate__zoomInUp'>
+                        <div className='ProductCard animate__animated animate__jackInTheBox'>
                               <div>
                                     <img
                                           className='My-img-fluid'
@@ -68,26 +68,22 @@ const ProductCard2 = (props) => {
                                           <h3 className='text-center'>
                                                 {price}
                                           </h3>
-                                          <button
-                                                className='btn btn-Main-color w-100 mt-2'
-                                                onClick={showDetail}
-                                          >
-                                                update
-                                          </button>
-                                          <button
-                                                className='btn btn-success w-100 mt-2'
-                                                onClick={showDetail}
-                                          >
-                                                Edit
-                                          </button>
-                                          <button
-                                                className='btn btn-danger w-100 mt-2'
-                                                onClick={() =>
-                                                      DeleteProduct(_id)
-                                                }
-                                          >
-                                                Delete
-                                          </button>
+                                          <div className='buttonBOx'>
+                                                <button
+                                                      className='btn btn-Main-color w-100 mt-2'
+                                                      onClick={showDetail}
+                                                >
+                                                      update
+                                                </button>
+                                                <button
+                                                      className='btn btn-danger w-100 mt-2'
+                                                      onClick={() =>
+                                                            DeleteProduct(_id)
+                                                      }
+                                                >
+                                                      Delete
+                                                </button>
+                                          </div>
                                     </div>
                               </div>
                         </div>

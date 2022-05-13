@@ -1,6 +1,6 @@
 .ProductBox {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(2, 1fr);
       grid-gap: 3rem;
       align-items: center;
       justify-items: center;
@@ -13,8 +13,17 @@
 .ProductCard {
       height: 100%;
       display: grid;
-      align-content: space-between;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 2rem;
+      align-content: center;
+      align-items: center;
+      height: 100%;
       padding: 20px;
+}
+.buttonBOx{
+      display: grid;
+      grid-template-columns: repeat(2, 1fr); 
+      grid-gap: 2rem;
 }
 /* .ProductCard:hover{
       
