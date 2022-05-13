@@ -1,4 +1,5 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 // import useFirebase from '../../Hooks/useFirebase';
 import Banner from '../Banner/Banner';
 import Counter from '../Counter/Counter';
@@ -7,7 +8,10 @@ import HomeProduct from '../Products/HomeProduct';
 import "./Home.css";
 
 
+
 const Home = () => {
+            const navigate = useNavigate();
+      
       // const { user } = useFirebase();
       return (
             <div>
@@ -24,6 +28,12 @@ const Home = () => {
                   </h1>
 
                   <HomeProduct />
+                  <button
+                        className='btn btn-primary'
+                        onClick={() => navigate('/ManageInventories')}
+                  >
+                        Manage Inventories
+                  </button>
                   <Map />
             </div>
       );

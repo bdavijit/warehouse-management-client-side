@@ -1,10 +1,11 @@
 import React, { useEffect, useState } from 'react';
-import { useParams } from 'react-router-dom';
+import { useNavigate, useParams } from 'react-router-dom';
 import useFirebase from '../../Hooks/useFirebase';
 import Login from '../Login/Login';
 
 const Inventory = () => {
     const { user } = useFirebase();
+      const navigate = useNavigate();
 
     const { Id } = useParams();
     // console.log(id);
@@ -111,9 +112,17 @@ const Inventory = () => {
                                     Delivered
                               </button>
                               <form onSubmit={handelStock}>
-                                    <input type="number" name="num" id="" />
-                                    <button type="submit">Add</button>
+                                    <input type='number' name='num' id='' />
+                                    <button type='submit'>Add</button>
                               </form>
+                              <button
+                                    className='btn btn-primary'
+                                    onClick={() =>
+                                          navigate('/ManageInventories')
+                                    }
+                              >
+                                    Manage Inventories
+                              </button>
                         </>
                   ) : (
                         <Login />
