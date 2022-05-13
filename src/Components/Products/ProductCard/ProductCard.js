@@ -1,15 +1,15 @@
 import React from 'react';
-import { useNavigate } from 'react-router-dom';
+// import { useNavigate } from 'react-router-dom';
 import "./ProductCard.css"
 
 const ProductCard = (props) => {
   
     const {_id, name, image , description, price } = props?.Product;
 
-      const navigate = useNavigate();
-      const showDetail = () => {
-            navigate('/inventory/' + _id);
-      };
+      // const navigate = useNavigate();
+      // const showDetail = () => {
+      //       navigate('/inventory/' + _id);
+      // };
     return (
           <div className='ProductCard animate__animated animate__zoomInUp'>
                 <div>
@@ -31,12 +31,12 @@ const ProductCard = (props) => {
                                         : description?.slice(0, 150)}
                             </p>
                             <h3 className='text-center'>{price}</h3>
-                            <button
+                            {/* <button
                                   className='btn btn-Main-color w-100 mt-2'
                                   onClick={showDetail}
                             >
                                   update
-                            </button>
+                            </button> */}
                       </div>
                 </div>
           </div>
