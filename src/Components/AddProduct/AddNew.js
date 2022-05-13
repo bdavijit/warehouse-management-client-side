@@ -1,4 +1,6 @@
 import React from 'react';
+import useFirebase from '../../Hooks/useFirebase';
+import Login from '../Login/Login';
 //   name: updatedProduct.name,
 //   image: updatedProduct.image,
 //   description: updatedProduct.description,
@@ -8,6 +10,9 @@ import React from 'react';
 //   sold: updatedProduct.sold,
 
 const AddNew = () => {
+
+      const { user } = useFirebase();
+
       const AddItem = (event) => {
             alert('ok');
 
@@ -46,60 +51,68 @@ const AddNew = () => {
                           });
       };
       return (
-            <div>
-                  <form onSubmit={AddItem}>
-                        <input
-                              type='text'
-                              name='name'
-                              id=''
-                              placeholder='Name'
-                        />
-                        <br></br>
-                        <input
-                              type='text'
-                              name='image'
-                              id=''
-                              placeholder='image'
-                        />
-                        <br></br>
-                        <input
-                              type='text'
-                              name='description'
-                              id=''
-                              placeholder='description'
-                        />
-                        <br></br>
-                        <input
-                              type='number'
-                              name='price'
-                              id=''
-                              placeholder='price'
-                        />
-                        <br></br>
-                        <input
-                              type='number'
-                              name='quantity'
-                              id=''
-                              placeholder='quantity'
-                        />
-                        <br></br>
-                        <input
-                              type='text'
-                              name='supplier_name'
-                              id=''
-                              placeholder='supplier_name'
-                        />
-                        <br></br>
-                        <input
-                              type='number'
-                              name='sold'
-                              id=''
-                              placeholder='sold'
-                        />
-                        <br></br>
-                        <button type='submit'>Add</button>
-                  </form>
-            </div>
+            <>
+                  {user ? (
+                        <div>
+                              <form onSubmit={AddItem}>
+                                    <input
+                                          type='text'
+                                          name='name'
+                                          id=''
+                                          placeholder='Name'
+                                    />
+                                    <br></br>
+                                    <input
+                                          type='text'
+                                          name='image'
+                                          id=''
+                                          placeholder='image'
+                                    />
+                                    <br></br>
+                                    <input
+                                          type='text'
+                                          name='description'
+                                          id=''
+                                          placeholder='description'
+                                    />
+                                    <br></br>
+                                    <input
+                                          type='number'
+                                          name='price'
+                                          id=''
+                                          placeholder='price'
+                                    />
+                                    <br></br>
+                                    <input
+                                          type='number'
+                                          name='quantity'
+                                          id=''
+                                          placeholder='quantity'
+                                    />
+                                    <br></br>
+                                    <input
+                                          type='text'
+                                          name='supplier_name'
+                                          value={user?.displayName}
+                                          placeholder='supplier_name'
+                                          required
+                                          disabled
+                                    />
+                                    <br></br>
+                                    <input
+                                          type='number'
+                                          name='sold'
+                                          id=''
+                                          placeholder='sold'
+                                    />
+                                    <br></br>
+                                    <button type='submit'>Add</button>
+                              </form>
+                        </div>
+                  ) : (
+                        <Login />
+                  )}
+            </>
       );
 };
 
