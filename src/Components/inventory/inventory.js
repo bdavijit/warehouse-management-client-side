@@ -17,12 +17,17 @@ const Inventory = () => {
     }, []);
 
          const handelDelivered = () =>{
-                  set_Products((previousState) => {
-                        return {
-                              ...previousState,
-                              quantity: Products?.quantity + 1,
-                        };
-                  });
+               if (Products?.quantity > 0){
+                     set_Products((previousState) => {
+                           return {
+                                 ...previousState,
+                                 quantity: Products?.quantity - 1,
+                           };
+                     });
+               }
+
+
+
          }
 
       return (
