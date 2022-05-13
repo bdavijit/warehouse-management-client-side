@@ -15,8 +15,21 @@ const Inventory = () => {
                 .then((res) => res.json())
                 .then((data) => set_Products(data));
     }, []);
+    
+         const handelStock = (event) =>{
+                event.preventDefault();
+                const num = event.target.num.value;
+                event.target.reset();
+               if (Products?.quantity > 0){
+                     set_Products((previousState) => {
+                           return {
+                                 ...previousState,
+                                 quantity: Products?.quantity + parseInt(num),
+                           };
+                     });
 
-
+                  }
+            }
 
 
          const handelDelivered = () =>{
@@ -42,7 +55,7 @@ const Inventory = () => {
                            .then((res) => res.json())
                            .then((data) => {
                                  console.log('success', data);
-                                 alert('users added successfully!!!');
+                                 alert('delivared');
                            });
                }
          }
@@ -84,6 +97,10 @@ const Inventory = () => {
                               <button className='btn' onClick={handelDelivered}>
                                     Delivered
                               </button>
+                              <form onSubmit={handelStock}>
+                                    <input type="number" name="num" id="" />
+                                    <button type="submit">Add</button>
+                              </form>
                         </>
                   ) : (
                         <Login />
