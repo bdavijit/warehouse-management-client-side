@@ -14,6 +14,7 @@ import Checkout from './Components/Products/Checkout/Checkout';
 import Products from './Components/Products/Product';
 import Error from './Components/Error/Error';
 import Inventory from './Components/inventory/inventory';
+import ManageInventories from './Components/Manage Inventories/ManageInventories';
 
 
 
@@ -34,6 +35,10 @@ function App() {
                     <Route
                           path='/inventory/:Id'
                           element={<Inventory />}
+                    ></Route>
+                    <Route
+                          path='/ManageInventories'
+                          element={<ManageInventories />}
                     ></Route>
 
                     <Route path='/blogs' element={<MainPage />} />
