@@ -1,11 +1,15 @@
 import React from 'react';
 import { Container, Nav, Navbar, NavDropdown } from 'react-bootstrap';
-import { NavLink } from 'react-router-dom';
+import { NavLink, useNavigate } from 'react-router-dom';
 import useFirebase from '../../Hooks/useFirebase';
 import './header2.css';
 
 const Header2 = () => {
       const { user, handleSignOut } = useFirebase();
+            const navigate = useNavigate();
+            // const showDetail = () => {
+            //       navigate('/inventory/' + _id);
+            // };
 return (
       <header>
             <Navbar bg='light' expand='lg'>
@@ -75,6 +79,26 @@ return (
                                                       }
                                                       id='basic-nav-dropdown'
                                                 >
+                                                      <NavDropdown.Item
+                                                            id='nav-dropdown'
+                                                            onClick={() =>
+                                                                  navigate(
+                                                                        '/ManageInventories'
+                                                                  )
+                                                            }
+                                                      >
+                                                            Manage Items
+                                                      </NavDropdown.Item>
+                                                      <NavDropdown.Item
+                                                            id='nav-dropdown'
+                                                            onClick={() =>
+                                                                  navigate(
+                                                                        '/Add_new'
+                                                                  )
+                                                            }
+                                                      >
+                                                            Add Item
+                                                      </NavDropdown.Item>
                                                       <NavDropdown.Item
                                                             id='nav-dropdown'
                                                             onClick={
