@@ -17,19 +17,32 @@ const Inventory = () => {
     }, []);
     
          const handelStock = (event) =>{
-                event.preventDefault();
-                const num = event.target.num.value;
-                event.target.reset();
-               if (Products?.quantity > 0){
+               event.preventDefault();
+               const num = event.target.num.value;
+               event.target.reset();
+               if (Products?.quantity > 0) {
                      set_Products((previousState) => {
                            return {
                                  ...previousState,
-                                 quantity: Products?.quantity + parseInt(num),
+                                 quantity: parseInt(Products?.quantity) + parseInt(num),
                            };
                      });
-
-                  }
-            }
+               }
+               // send data to the server
+               const url = `http://localhost:5001/AddProduct/${Id}`;
+               fetch(url, {
+                     method: 'PUT',
+                     headers: {
+                           'content-type': 'application/json',
+                     },
+                     body: JSON.stringify({...Products , add: num}),
+               })
+                     .then((res) => res.json())
+                     .then((data) => {
+                           console.log('success', data);
+                           alert('added');
+                     });
+         }
 
 
          const handelDelivered = () =>{
