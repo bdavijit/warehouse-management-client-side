@@ -26,9 +26,9 @@ const ProductCard = (props) => {
                                   {name}
                             </h1>
                             <p className='text-center'>
-                                  {description.length >= 150
-                                        ? description.slice(0, 150) + '....'
-                                        : description.slice(0, 150)}
+                                  {description?.length >= 150
+                                        ? description?.slice(0, 150) + '....'
+                                        : description?.slice(0, 150)}
                             </p>
                             <h3 className='text-center'>{price}</h3>
                             <button

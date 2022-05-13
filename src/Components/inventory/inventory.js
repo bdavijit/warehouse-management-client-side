@@ -17,7 +17,12 @@ const Inventory = () => {
     }, []);
 
          const handelDelivered = () =>{
-  
+                  set_Products((previousState) => {
+                        return {
+                              ...previousState,
+                              quantity: Products?.quantity + 1,
+                        };
+                  });
          }
 
       return (
