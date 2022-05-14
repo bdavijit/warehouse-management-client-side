@@ -16,6 +16,7 @@
       grid-template-columns: repeat(2, 1fr);
       align-content: space-between;
       padding: 20px;
+      background-color: rgba(210, 209, 209, 0.414);
 }
 /* .ProductCard:hover{
       

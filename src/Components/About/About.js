@@ -1,5 +1,4 @@
 import React from 'react';
-import mainLogo from '../../Image/banner4.webp';
 import './About.css';
 
 const About = () => {
@@ -8,7 +7,7 @@ const About = () => {
                   <div className='AboutBox'>
                         <div className='animate__animated animate__fadeInLeft'>
                               <img
-                                    src={mainLogo}
+                                    src='https://thumbs.dreamstime.com/b/vegetables-shopping-cart-trolley-grocery-logo-icon-design-vector-171090350.jpg'
                                     alt='mainLogo'
                                     className='My-img-fluid'
                               />
@@ -18,12 +17,13 @@ const About = () => {
                                     className='text-center'
                                     style={{ color: '#cc4717' }}
                               >
-                                    Avijit Kundu
+                                    GroceryHUB
                               </h1>
                               <p className='text-center'>
-                                    bdavijit01@gmail.com
+                                    The Grocery hub Kanishka Rd, A-Zone,
+                                    Durgapur, West Bengal, india
                               </p>
-                              <p className='text-center'>01674566999999</p>
+                              <p className='text-center'>090640 92329</p>
                         </div>
 
                         <div className='animate__animated animate__fadeInLeft'>
@@ -31,35 +31,32 @@ const About = () => {
                                     style={{ color: '#cc4717' }}
                                     className='text-center'
                               >
-                                    Goal
+                                    Business Hours
                               </h1>
                               <p className='text-center mb-4'>
-                                    I want to be a web developer, especially for
-                                    Home jobs / Businesses ( related to
-                                    websites)
+                                    Mon: Open 24 hours <br />
+                                    Tue: Open 24 hours <br />
+                                    Wed: Open 24 hours
+                                    <br />
+                                    Thu: Open 24 hours
+                                    <br />
+                                    Fri: Close
+                                    <br />
+                                    Sat: Open 24 hours
+                                    <br />
+                                    Sun: Open 24 hours
                               </p>
                               <h1
                                     style={{ color: '#cc4717' }}
                                     className='text-center'
                               >
-                                    How I will work hard to achieve my goal.
+                                    Contact
                               </h1>
-                              <p>
-                                    1. I design 10 project plans, I will finish
-                                    these projects in 2 months.
-                                    <br />
-                                    2. Every day I will visit to at least three
-                                    website.
-                                    <br />
-                                    3. Time management is the biggest challenge
-                                    for me. I should manage more effective time.
-                                    <br />
-                                    4. More practice.
-                              </p>
+                              <p className='text-center mb-4'>090640 92329</p>
                         </div>
                         <div className='animate__animated animate__fadeInRight'>
                               <img
-                                    src='https://hatil.com/sites/default/files/About%20us%2002%2B%2B_1.png'
+                                    src='https://lh3.googleusercontent.com/p/AF1QipMpA9wQVdYrD0bhtJCO092aCWf3GrAw9Jd7zNfU=w1080-h608-p-no-v0'
                                     alt=''
                                     className='My-img-fluid'
                               />
