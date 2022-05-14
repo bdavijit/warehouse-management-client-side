@@ -54,6 +54,7 @@ const Inventory = () => {
                         return {
                               ...previousState,
                               quantity: Products?.quantity - 1,
+                              sold: parseInt(Products?.sold) + 1,
                         };
                   });
 
@@ -118,14 +119,14 @@ const Inventory = () => {
                                                 </tr>
                                                 <tr>
                                                       <td>4</td>
-                                                      <td>quantity</td>
+                                                      <td>Quantity</td>
                                                       <td>
                                                             {Products?.quantity}
                                                       </td>
                                                 </tr>
                                                 <tr>
                                                       <td>5</td>
-                                                      <td>supplier_name</td>
+                                                      <td>Supplier name</td>
                                                       <td>
                                                             {
                                                                   Products?.supplier_name
@@ -134,7 +135,7 @@ const Inventory = () => {
                                                 </tr>
                                                 <tr>
                                                       <td>6</td>
-                                                      <td> sold</td>
+                                                      <td>Sold</td>
                                                       <td>{Products?.sold}</td>
                                                 </tr>
                                           </tbody>

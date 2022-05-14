@@ -1,0 +1,11 @@
+.BannerBox{
+    width: 75%;
+    margin: auto;
+}
+
+@media only screen and (max-width: 1200px) {
+    .BannerBox{
+    width: 100%;
+
+}
+}

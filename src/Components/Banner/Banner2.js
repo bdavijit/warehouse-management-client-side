@@ -3,20 +3,22 @@ import ban1 from '../../Image/banner/b1.jpg';
 import ban2 from '../../Image/banner/b2.png';
 import ban3 from '../../Image/banner/b3.jpg';
 
+import "./Banner2.css"
+
 const Banner2 = () => {
       return (
-            <div>
+            <div className='BannerBox'>
                   <div
                         id='carouselExampleCaptions'
-                        class='carousel slide'
+                        className='carousel slide'
                         data-bs-ride='carousel'
                   >
-                        <div class='carousel-indicators'>
+                        <div className='carousel-indicators'>
                               <button
                                     type='button'
                                     data-bs-target='#carouselExampleCaptions'
                                     data-bs-slide-to='0'
-                                    class='active'
+                                    className='active'
                                     aria-current='true'
                                     aria-label='Slide 1'
                               ></button>
@@ -33,71 +35,64 @@ const Banner2 = () => {
                                     aria-label='Slide 3'
                               ></button>
                         </div>
-                        <div class='carousel-inner'>
-                              <div class='carousel-item active'>
+                        <div className='carousel-inner'>
+                              <div className='carousel-item active'>
                                     <img
-                                          src={ban1}
-                                          class='d-block w-100'
+                                          src='https://www.sfbl.com.bd/uploaded_files/Basic-Spice-790x434-pix.jpg'
+                                          className='d-block w-100'
                                           alt='...'
-                                       
                                     />
-                                    <div class='carousel-caption d-none d-md-block'>
+                                    <div className='carousel-caption d-none d-md-block'>
                                           <h5></h5>
-                                          <p>
-                                              
-                                          </p>
+                                          <p></p>
                                     </div>
                               </div>
-                              <div class='carousel-item'>
+                              <div className='carousel-item'>
                                     <img
-                                          src={ban2}
-                                          class='d-block w-100'
+                                          src='https://www.sfbl.com.bd/uploaded_files/Kala-Bhuna-790x434-pix-(2021).jpg'
+                                          className='d-block w-100'
                                           alt='...'
                                     />
-                                    <div class='carousel-caption d-none d-md-block'>
+                                    <div className='carousel-caption d-none d-md-block'>
                                           <h5></h5>
-                                          <p>
-                                          
-                                          </p>
+                                          <p></p>
                                     </div>
                               </div>
-                              <div class='carousel-item'>
+                              <div className='carousel-item'>
                                     <img
-                                          src={ban3}
-                                          class='d-block w-100'
+                                          src='https://www.sfbl.com.bd/uploaded_files/Mustard%20Oil%20WEB%20%20790%20X%20434-01.jpg'
+                                          className='d-block w-100'
                                           alt='...'
                                     />
-                                    <div class='carousel-caption d-none d-md-block text-dark'>
+                                    <div className='carousel-caption d-none d-md-block text-dark'>
                                           <h5></h5>
-                                          <p>
-                                             
-                                          </p>
+                                          <p></p>
                                     </div>
                               </div>
                         </div>
                         <button
-                              class='carousel-control-prev'
+                              className='carousel-control-prev'
                               type='button'
                               data-bs-target='#carouselExampleCaptions'
                               data-bs-slide='prev'
                         >
                               <span
-                                    class='carousel-control-prev-icon'
+                                    className='carousel-control-prev-icon'
                                     aria-hidden='true'
                               ></span>
-                              <span class='visually-hidden'>Previous</span>
+                              <span className='visually-hidden'>Previous</span>
                         </button>
                         <button
-                              class='carousel-control-next'
+                              className='carousel-control-next'
                               type='button'
                               data-bs-target='#carouselExampleCaptions'
                               data-bs-slide='next'
                         >
                               <span
-                                    class='carousel-control-next-icon'
+                                    className='carousel-control-next-icon'
                                     aria-hidden='true'
                               ></span>
-                              <span class='visually-hidden'>Next</span>
+                              <span className='visually-hidden'>Next</span>
                         </button>
                   </div>
             </div>

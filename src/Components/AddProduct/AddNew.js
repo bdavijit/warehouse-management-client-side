@@ -66,6 +66,7 @@ const AddNew = () => {
                                           name='name'
                                           id=''
                                           placeholder='Name'
+                                          required
                                     />
                                     <br></br>
                                     <br></br>
@@ -73,7 +74,8 @@ const AddNew = () => {
                                           type='text'
                                           name='image'
                                           id=''
-                                          placeholder='image'
+                                          placeholder='Image'
+                                          required
                                     />
                                     <br></br>
                                     <br></br>
@@ -81,7 +83,7 @@ const AddNew = () => {
                                           type='text'
                                           name='description'
                                           id=''
-                                          placeholder='description'
+                                          placeholder='Description'
                                     />
                                     <br></br>
                                     <br></br>
@@ -89,7 +91,8 @@ const AddNew = () => {
                                           type='number'
                                           name='price'
                                           id=''
-                                          placeholder='price'
+                                          placeholder='Price'
+                                          required
                                     />
                                     <br></br>
                                     <br></br>
@@ -97,7 +100,8 @@ const AddNew = () => {
                                           type='number'
                                           name='quantity'
                                           id=''
-                                          placeholder='quantity'
+                                          placeholder='Quantity'
+                                          required
                                     />
                                     <br></br>
                                     <br></br>
@@ -105,7 +109,7 @@ const AddNew = () => {
                                           type='text'
                                           name='supplier_name'
                                           value={user?.displayName}
-                                          placeholder='supplier_name'
+                                          placeholder='supplier name'
                                           required
                                           disabled
                                     />
@@ -115,7 +119,8 @@ const AddNew = () => {
                                           type='number'
                                           name='sold'
                                           id=''
-                                          placeholder='sold'
+                                          placeholder='Sold'
+                                          required
                                     />
                                     <br></br>
                                     <br></br>

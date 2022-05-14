@@ -32,7 +32,6 @@ const ProductCard = (props) => {
                                         ? description?.slice(0, 150) + '....'
                                         : description?.slice(0, 150)}
                             </p>
-                            <h3 className='text-center'>{price}</h3>
                       </div>
                 </div>
           </div>
