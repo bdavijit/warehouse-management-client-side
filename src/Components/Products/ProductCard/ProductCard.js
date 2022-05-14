@@ -1,8 +1,9 @@
 import React from 'react';
-// import { useNavigate } from 'react-router-dom';
+import useFirebase from '../../../Hooks/useFirebase';
 import "./ProductCard.css"
 
 const ProductCard = (props) => {
+     
   
     const { name, image , description, price } = props?.Product;
 

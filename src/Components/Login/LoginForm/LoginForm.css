@@ -1,5 +1,6 @@
 .Login-Form {
       margin-top: 15px;
+      width: 85%;
 }
 .Login-Form input {
       padding: 15px;
@@ -10,6 +11,7 @@
 }
 .LoginFrom {
       display: grid;
+      
 }
 /* .Login-Form input:focus{
     border: 3px solid #E03B8B;

@@ -36,7 +36,7 @@ const ProductCard2 = (props) => {
       return (
             <>
                   {user && user?.displayName === supplier_name ? (
-                        <div className='ProductCard animate__animated animate__jackInTheBox'>
+                        <div className='ProductCard animate__animated animate__flipInX'>
                               <div>
                                     <img
                                           className='My-img-fluid'

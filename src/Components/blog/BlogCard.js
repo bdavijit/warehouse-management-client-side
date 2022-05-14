@@ -29,7 +29,10 @@ const BlogCard = (props) => {
                                             ? detail.slice(0, 150) + '....'
                                             : detail.slice(0, 150)}
                                 </p>
-                                <button className='' onClick={showBlogDetail}>
+                                <button
+                                      className='w-75'
+                                      onClick={showBlogDetail}
+                                >
                                       Detail
                                 </button>
                           </div>
@@ -43,7 +46,10 @@ const BlogCard = (props) => {
                                             ? detail.slice(0, 150) + '....'
                                             : detail.slice(0, 150)}
                                 </p>
-                                <button className='' onClick={showBlogDetail}>
+                                <button
+                                      className='w-75'
+                                      onClick={showBlogDetail}
+                                >
                                       Detail
                                 </button>
                           </div>

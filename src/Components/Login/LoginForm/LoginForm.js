@@ -18,7 +18,7 @@ const LoginForm = () => {
     } = useFirebase();
     return (
           <div className='Login-Form'>
-                <h1 className='mb-3'>
+                <h1 className='mb-3 text-center'>
                       Please
                       <span style={{ color: '#cc4717' }}>
                             {registered ? ' Login' : ' Register'}
@@ -49,7 +49,7 @@ const LoginForm = () => {
                             <input
                                   onBlur={handlePasswordBlur}
                                   type='password'
-                                  placeholder='password'
+                                  placeholder='Password'
                                   required
                             />
                             <br></br>
