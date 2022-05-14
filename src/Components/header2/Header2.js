@@ -17,7 +17,7 @@ return (
                         <Navbar.Brand to='/'>
                               <span
                                     style={{
-                                          color: '#e03b8b',
+                                          color: '#8e4017',
                                           fontWeight: 'bold',
                                     }}
                               >

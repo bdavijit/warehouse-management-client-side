@@ -16,7 +16,7 @@ const About = () => {
                         <div className='animate__animated animate__fadeInRight'>
                               <h1
                                     className='text-center'
-                                    style={{ color: '#E03B8B' }}
+                                    style={{ color: '#cc4717' }}
                               >
                                     Avijit Kundu
                               </h1>
@@ -28,7 +28,7 @@ const About = () => {
 
                         <div className='animate__animated animate__fadeInLeft'>
                               <h1
-                                    style={{ color: '#E03B8B' }}
+                                    style={{ color: '#cc4717' }}
                                     className='text-center'
                               >
                                     Goal
@@ -39,7 +39,7 @@ const About = () => {
                                     websites)
                               </p>
                               <h1
-                                    style={{ color: '#E03B8B' }}
+                                    style={{ color: '#cc4717' }}
                                     className='text-center'
                               >
                                     How I will work hard to achieve my goal.

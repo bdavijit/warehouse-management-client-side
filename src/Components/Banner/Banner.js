@@ -1,6 +1,6 @@
 import React from 'react';
 import mainLogo from '../../Image/banner4.webp';
-import "./Banner.css"
+import "./Banner.css";
 
 const Banner = () => {
     return (
@@ -16,7 +16,7 @@ const Banner = () => {
                       <div className='animate__animated animate__fadeInRight'>
                             <h1 className='text-center'>
                                   Welcome To <br />{' '}
-                                  <span style={{ color: '#e03b8b' }}>
+                                  <span style={{ color: '#cc4717' }}>
                                         Grocery
                                   </span>{' '}
                                   HUB

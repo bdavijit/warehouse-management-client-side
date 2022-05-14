@@ -1,5 +1,5 @@
-.Login-Form{
-    margin-top: 15px;
+.Login-Form {
+      margin-top: 15px;
 }
 .Login-Form input {
       padding: 15px;
@@ -8,18 +8,17 @@
       border: 1px solid rgba(0, 0, 0, 0.641);
       align-items: center;
 }
-.LoginFrom{
-    display: grid;
-    
+.LoginFrom {
+      display: grid;
 }
 /* .Login-Form input:focus{
     border: 3px solid #E03B8B;
 } */
-.btn-Main-color{
-    background-color: #E03B8B;
-    color: white;
+.btn-Main-color {
+      background-color: #cc4717;
+      color: white;
 }
-.btn-Main-color:hover{
-   background-color: #e42380;
-   color: white;
+.btn-Main-color:hover {
+      background-color: #8e4017;
+      color: white;
 }

@@ -1,8 +1,8 @@
 import React from 'react';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import useFirebase from '../../../Hooks/useFirebase';
 import "./LoginForm.css";
- import { ToastContainer } from 'react-toastify';
- import 'react-toastify/dist/ReactToastify.css';
 
 const LoginForm = () => {
 
@@ -20,7 +20,7 @@ const LoginForm = () => {
           <div className='Login-Form'>
                 <h1 className='mb-3'>
                       Please
-                      <span style={{ color: '#E03B8B' }}>
+                      <span style={{ color: '#cc4717' }}>
                             {registered ? ' Login' : ' Register'}
                       </span>
                 </h1>

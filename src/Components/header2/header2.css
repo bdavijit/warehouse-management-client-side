@@ -2,36 +2,36 @@
       display: grid;
 }
 #nav-dropdown:active,
-#nav-dropdown:hover{
-  background-color: #e03b8b ;
-  color: white;
+#nav-dropdown:hover {
+      background-color: #8e4017;
+      color: white;
 }
 
 .activeStyleLogo {
       font-size: 18px;
       padding: 5px;
-      border-bottom: 4px solid #e03b8b;
+      border-bottom: 4px solid #8e4017;
       transition-duration: 0.3s;
 }
 
 .logo-text-first {
-      color: #e03b8b;
+      color: #8e4017;
       font-size: 19px;
       font-weight: 800;
 }
 
 .logo-text-first:hover {
-      color: #e03b8b;
+      color: #8e4017;
 }
 
 .logo-text {
       font-size: 19px;
-      color: goldenrod;
+      color: #8e4017;
       font-weight: 700;
 }
 
 .logo-text:hover {
-      color: orange;
+      color: #8e4017;
 }
 
 .customLogo {
@@ -41,7 +41,7 @@
 }
 
 .customLogo:hover {
-      border-top: 4px solid #e03b8b;
+      border-top: 4px solid #8e4017;
       border-radius: 3px;
       padding: 5px;
       transition-duration: 0.2s;
@@ -54,8 +54,8 @@
 }
 
 .custom:hover {
-      color: #E03B8B;
-      border-bottom: 2px solid #E03B8B;
+      color: #8e4017;
+      border-bottom: 2px solid #8e4017;
       padding-bottom: 5px;
       border-radius: 3px;
 }
@@ -66,7 +66,7 @@
       margin-left: 10px;
       font-size: 16px;
       font-weight: 600;
-      background-color: #E03B8B;
+      background-color: #8e4017;
       border: 1px solid rgba(14, 178, 228, 0.795);
       border-radius: 7px;
       padding: 8px 20px;
@@ -74,13 +74,13 @@
 
 .custom-logout:hover {
       color: rgb(245, 243, 243);
-      background-color: #E03B8B;
+      background-color: #8e4017;
 }
 
 .activeStyle {
       color: rgba(3, 42, 54, 0.733);
       padding: 5px;
-      border-bottom: 4px solid goldenrod;
+      border-bottom: 4px solid #8e4017;
       border-radius: px;
       transition-duration: 0.3s;
 }

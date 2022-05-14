@@ -6,7 +6,7 @@ const Map = () => {
                 <h1
                       className='text-center mt-5 main-color mb-lg-5'
                       style={{
-                            color: '#e03b8b',
+                            color: '#cc4717',
                             fontWeight: 'bold',
                       }}
                 >

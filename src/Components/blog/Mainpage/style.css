@@ -26,7 +26,7 @@
 }
 .title-Text {
       font-size: 2vw;
-      color: #e03b8b;
+      color: #cc4717;
       font-weight: bold;
 }
 .p-Text {
@@ -45,7 +45,7 @@
       align-items: center;
 }
 .BlogBox button {
-      background-color: #ec2183;
+      background-color: #cc4717;
       color: aliceblue;
       padding: 5px 40px;
       margin-top: 40px;
@@ -54,7 +54,7 @@
       border: 0px;
 }
 .BlogBox button:hover {
-      background-color: #e03b8b;
+      background-color: #8e4017;
 }
 
 @media screen and (max-width: 1000px) {

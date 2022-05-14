@@ -19,12 +19,20 @@ const ManageInventories = () => {
             <>
                   {user ? (
                         <>
-                              <button
-                                    className='btn btn-primary'
-                                    onClick={() => navigate('/Add_new')}
+                              <div
+                                    style={{
+                                          display: 'flex',
+                                          justifyContent: 'center',
+                                    }}
                               >
-                                    add new item
-                              </button>
+                                    <button
+                                          className='btn btn-Main-color mt-4'
+                                          onClick={() => navigate('/Add_new')}
+                                    >
+                                          Add New Item
+                                    </button>
+                              </div>
+
                               {/* <h1>This is product page</h1> */}
                               <div className='ProductBox mt-3'>
                                     {Products?.map((Product) => (

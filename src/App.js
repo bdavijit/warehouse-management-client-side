@@ -10,7 +10,7 @@ import Header2 from './Components/header2/Header2';
 import Home from './Components/Home/Home';
 import Login from './Components/Login/Login';
 
-import Checkout from './Components/Products/Checkout/Checkout';
+
 import Products from './Components/Products/Product';
 import Error from './Components/Error/Error';
 import Inventory from './Components/inventory/inventory';
@@ -29,10 +29,6 @@ function App() {
                     <Route path='/Login' element={<Login />}></Route>
                     <Route path='/About' element={<About />}></Route>
                     <Route path='/product' element={<Products />}></Route>
-                    {/* <Route
-                          path='/product/:ProductId'
-                          element={<Checkout />}
-                    ></Route> */}
                     <Route
                           path='/inventory/:Id'
                           element={<Inventory />}

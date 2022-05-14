@@ -34,11 +34,27 @@ const [T_customer, setT_customer] = useState(100);
       return (
             <div className='CounterBox'>
                   <div className='text-center'>
-                        <h1>{T_customer}</h1>
+                        <h1
+                              className=' mt-4'
+                              style={{
+                                    color: '#cc4717',
+                                    fontWeight: 'bold',
+                              }}
+                        >
+                              {T_customer}
+                        </h1>
                         <h3>Total Customer</h3>
                   </div>
                   <div className='text-center'>
-                        <h1>{TProduct}</h1>
+                        <h1
+                              className=' mt-4'
+                              style={{
+                                    color: '#cc4717',
+                                    fontWeight: 'bold',
+                              }}
+                        >
+                              {TProduct}
+                        </h1>
                         <h3>Total Product</h3>
                   </div>
             </div>

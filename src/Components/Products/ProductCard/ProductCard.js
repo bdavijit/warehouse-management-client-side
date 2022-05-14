@@ -21,7 +21,7 @@ const ProductCard = (props) => {
                             <h1
                                   className='text-center'
                                   style={{
-                                        color: '#e03b8b',
+                                        color: '#cc4717',
                                   }}
                             >
                                   {name}

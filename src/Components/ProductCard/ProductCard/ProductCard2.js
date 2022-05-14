@@ -49,7 +49,7 @@ const ProductCard2 = (props) => {
                                           <h1
                                                 className='text-center'
                                                 style={{
-                                                      color: '#e03b8b',
+                                                      color: '#cc4717',
                                                 }}
                                           >
                                                 {name}
@@ -68,6 +68,19 @@ const ProductCard2 = (props) => {
                                           <h3 className='text-center'>
                                                 {price}
                                           </h3>
+                                          <p className='text-center'>
+                                                Added by:{' '}
+                                                <span
+                                                      style={{
+                                                            color: '#cc4717',
+                                                      }}
+                                                >
+                                                      {' '}
+                                                      {user?.displayName
+                                                            ? user?.displayName
+                                                            : 'No Data Found'}
+                                                </span>
+                                          </p>
                                           <div className='buttonBOx'>
                                                 <button
                                                       className='btn btn-Main-color w-100 mt-2'
