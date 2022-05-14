@@ -1,6 +1,7 @@
 import React from 'react';
 import useFirebase from '../../Hooks/useFirebase';
 import Login from '../Login/Login';
+import './AddNew.css'
 //   name: updatedProduct.name,
 //   image: updatedProduct.image,
 //   description: updatedProduct.description,
@@ -53,14 +54,20 @@ const AddNew = () => {
       return (
             <>
                   {user ? (
-                        <div>
-                              <form onSubmit={AddItem}>
+                        <div className='AddNewBox'>
+                              <h1 className='mb-3 text-center'>
+                                    <span style={{ color: '#cc4717' }}>
+                                          Add New Product
+                                    </span>
+                              </h1>
+                              <form className='AddNew-Form' onSubmit={AddItem}>
                                     <input
                                           type='text'
                                           name='name'
                                           id=''
                                           placeholder='Name'
                                     />
+                                    <br></br>
                                     <br></br>
                                     <input
                                           type='text'
@@ -69,12 +76,14 @@ const AddNew = () => {
                                           placeholder='image'
                                     />
                                     <br></br>
+                                    <br></br>
                                     <input
                                           type='text'
                                           name='description'
                                           id=''
                                           placeholder='description'
                                     />
+                                    <br></br>
                                     <br></br>
                                     <input
                                           type='number'
@@ -83,12 +92,14 @@ const AddNew = () => {
                                           placeholder='price'
                                     />
                                     <br></br>
+                                    <br></br>
                                     <input
                                           type='number'
                                           name='quantity'
                                           id=''
                                           placeholder='quantity'
                                     />
+                                    <br></br>
                                     <br></br>
                                     <input
                                           type='text'
@@ -99,6 +110,7 @@ const AddNew = () => {
                                           disabled
                                     />
                                     <br></br>
+                                    <br></br>
                                     <input
                                           type='number'
                                           name='sold'
@@ -106,7 +118,13 @@ const AddNew = () => {
                                           placeholder='sold'
                                     />
                                     <br></br>
-                                    <button type='submit'>Add</button>
+                                    <br></br>
+                                    <button
+                                          className='btn btn-Main-color w-75 mx-auto'
+                                          type='submit'
+                                    >
+                                          Add
+                                    </button>
                               </form>
                         </div>
                   ) : (

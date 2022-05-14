@@ -1,0 +1,40 @@
+.AddNewBox {
+      max-width: 900px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: auto;
+      border-radius: 10px;
+      background-color: rgba(210, 209, 209, 0.414);
+      margin-top: 20px;
+      padding: 40px;
+      justify-content: center;
+      align-content: flex-start;
+}
+.AddNew-Form {
+      margin-top: 15px;
+      width: 85%;
+      display: flex;
+      flex-direction: column;
+}
+.AddNew-Form input {
+      padding: 15px;
+      font-size: 20px;
+      border-radius: 10px;
+      border: 1px solid rgba(0, 0, 0, 0.641);
+      align-items: center;
+}
+.AddNewFrom {
+      display: grid;
+}
+/* .AddNew-Form input:focus{
+    border: 3px solid #E03B8B;
+} */
+.btn-Main-color {
+      background-color: #cc4717;
+      color: white;
+}
+.btn-Main-color:hover {
+      background-color: #8e4017;
+      color: white;
+}
