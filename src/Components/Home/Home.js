@@ -1,5 +1,7 @@
 import React from 'react';
+import { Spinner } from 'react-bootstrap';
 import { useNavigate } from 'react-router-dom';
+import useFirebase from '../../Hooks/useFirebase';
 // import useFirebase from '../../Hooks/useFirebase';
 import Banner from '../Banner/Banner';
 import Banner2 from '../Banner/Banner2';
@@ -10,10 +12,15 @@ import './Home.css';
 
 const Home = () => {
       const navigate = useNavigate();
-
+      const { loading } = useFirebase();
       // const { user } = useFirebase();
       return (
             <div>
+                  {loading ? (
+                        <Spinner animation='border' variant='danger' />
+                  ) : (
+                        ''
+                  )}
                   <Banner2></Banner2>
 
                   <br></br>

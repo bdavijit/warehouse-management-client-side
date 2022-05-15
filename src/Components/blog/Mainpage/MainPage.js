@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from "react";
+import { Spinner } from "react-bootstrap";
 import useBlogs from "../../../Hooks/useBlogs";
+import useFirebase from "../../../Hooks/useFirebase";
 import { activeBTn } from "../../../Utility/ActiveBtn";
 import BlogCard from "../BlogCard";
 import "./activebtn.css";
@@ -8,6 +10,7 @@ import "./style.css";
 const MainPage = () => {
   const [DisplayBlog, SetDisplayBlog] = useState([]);
   const [blogs, SetBlogs] = useBlogs();
+  const { loading } = useFirebase();
 
   let start = 0;
 
@@ -38,6 +41,11 @@ const MainPage = () => {
   return (
         <>
               <section className='BlogBox'>
+                    {loading ? (
+                          <Spinner animation='border' variant='danger' />
+                    ) : (
+                          ''
+                    )}
                     <br></br>
                     {DisplayBlog.map((blog) => (
                           <BlogCard key={blog.id} blog={blog} />

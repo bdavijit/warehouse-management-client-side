@@ -1,21 +1,21 @@
+import 'animate.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Route, Routes } from 'react-router-dom';
 import './App.css';
-import 'animate.css';
 import About from './Components/About/About';
+import AddNew from './Components/AddProduct/AddNew';
 import BlogDetail from './Components/blog/BlogDetail/BlogDetail';
 import MainPage from './Components/blog/Mainpage/MainPage';
+import Error from './Components/Error/Error';
 import Footer from './Components/Footer/Footer';
 import Header2 from './Components/header2/Header2';
 import Home from './Components/Home/Home';
-import Login from './Components/Login/Login';
-
-
-import Products from './Components/Products/Product';
-import Error from './Components/Error/Error';
 import Inventory from './Components/inventory/inventory';
+import Login from './Components/Login/Login';
 import ManageInventories from './Components/Manage Inventories/ManageInventories';
-import AddNew from './Components/AddProduct/AddNew';
+import Products from './Components/Products/Product';
+
+
 
 
 

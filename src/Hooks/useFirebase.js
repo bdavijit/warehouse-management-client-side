@@ -26,10 +26,12 @@ const useFirebase = () => {
       const [name, setName] = useState('');
       const [email, setEmail] = useState('');
       const [password, setPassword] = useState('');
+      const [loading, SetLoading] = useState(false);
 
       //update name
       const setUserName = () => {
             console.log('ok');
+            
             updateProfile(auth.currentUser, {
                   displayName: name,
             })
@@ -57,18 +59,20 @@ const useFirebase = () => {
       };
 
       const handlePasswordReset = () => {
-            if (!email){
-                   toast('Please type Email');
-                   return;
+            SetLoading(true);
+            if (!email) {
+                  toast('Please type Email');
+                  return;
             }
-                  sendPasswordResetEmail(auth, email)
-                        .then(() => {
-                              console.log('email sent');
-                              toast('email sent');
-                        })
-                        .catch((error) => {
-                              toast(error.message);
-                        });
+            sendPasswordResetEmail(auth, email)
+                  .then(() => {
+                        console.log('email sent');
+                        toast('email sent');
+                        SetLoading(false);
+                  })
+                  .catch((error) => {
+                        toast(error.message);
+                  });
       };
 
       const verifyEmail = () => {
@@ -80,6 +84,7 @@ const useFirebase = () => {
 
       const handleFormSubmit = (event) => {
             event.preventDefault();
+            SetLoading(true);
 
             // check Password Should contain at least one special character
             if (!/(?=.*?[#?!@$%^&*-])/.test(password)) {
@@ -96,6 +101,7 @@ const useFirebase = () => {
                               setError('');
                               console.log(user);
                               setUser(user);
+                              SetLoading(false);
                         })
                         .catch((error) => {
                               setError(error.message);
@@ -110,6 +116,7 @@ const useFirebase = () => {
                               setError('');
                               verifyEmail();
                               setUserName();
+                              SetLoading(false);
                         })
                         .catch((error) => {
                               setError(error.message);
@@ -149,7 +156,9 @@ const useFirebase = () => {
             handleFormSubmit,
             error,
             registered,
+            loading,
+            SetLoading,
       };
-};
+};;
 
 export default useFirebase;

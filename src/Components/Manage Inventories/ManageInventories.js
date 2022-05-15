@@ -1,4 +1,5 @@
 import React from 'react';
+import { Spinner } from 'react-bootstrap';
 import { useNavigate } from 'react-router-dom';
 import useFirebase from '../../Hooks/useFirebase';
 import useProducts from '../../Hooks/useProduct';
@@ -13,10 +14,16 @@ const ManageInventories = () => {
       const [Products, SetProducts] = useProducts();
       const { user } = useFirebase();
 
-
+      const { loading } = useFirebase();
 
       return (
             <>
+                  {loading ? (
+                        <Spinner animation='border' variant='danger' />
+                  ) : (
+                        ''
+                  )}
+
                   {user ? (
                         <>
                               <div

@@ -1,7 +1,4 @@
 import React from 'react';
-import ban1 from '../../Image/banner/b1.jpg';
-import ban2 from '../../Image/banner/b2.png';
-import ban3 from '../../Image/banner/b3.jpg';
 
 import "./Banner2.css"
 

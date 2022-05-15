@@ -1,21 +1,25 @@
 import React, { useEffect, useState } from 'react';
-import { Table } from 'react-bootstrap';
+import { Spinner, Table } from 'react-bootstrap';
 import { useNavigate, useParams } from 'react-router-dom';
 import useFirebase from '../../Hooks/useFirebase';
 import Login from '../Login/Login';
 
 const Inventory = () => {
-      const { user } = useFirebase();
+      const { user, SetLoading, loading } = useFirebase();
       const navigate = useNavigate();
 
       const { Id } = useParams();
       // console.log(id);
       const [Products, set_Products] = useState({});
       useEffect(() => {
+            SetLoading(true);
             const url = `http://localhost:5001/products/${Id}`;
             fetch(url)
                   .then((res) => res.json())
-                  .then((data) => set_Products(data));
+                  .then((data) => {
+                        set_Products(data);
+                        SetLoading(false);
+                  });
       }, []);
 
       const handelStock = (event) => {
@@ -33,6 +37,7 @@ const Inventory = () => {
                   });
             }
             // send data to the server
+             SetLoading(true);
             const url = `http://localhost:5001/AddProduct/${Id}`;
             fetch(url, {
                   method: 'PUT',
@@ -45,6 +50,7 @@ const Inventory = () => {
                   .then((data) => {
                         console.log('success', data);
                         alert('added');
+                         SetLoading(false);
                   });
       };
 
@@ -59,6 +65,7 @@ const Inventory = () => {
                   });
 
                   // send data to the server
+                   SetLoading(true);
                   const url = `http://localhost:5001/Product/${Id}`;
                   fetch(url, {
                         method: 'PUT',
@@ -71,12 +78,18 @@ const Inventory = () => {
                         .then((data) => {
                               console.log('success', data);
                               alert('delivared');
+                               SetLoading(false);
                         });
             }
       };
 
       return (
             <div>
+                  {loading ? (
+                        <Spinner  animation='border' variant='danger' />
+                  ) : (
+                        ''
+                  )}
                   {user ? (
                         <>
                               <div className='text-center'>
@@ -147,7 +160,7 @@ const Inventory = () => {
                                           justifyContent: 'center',
                                           flexDirection: 'column',
                                           alignItems: 'center',
-                                          marginTop : "30px"
+                                          marginTop: '30px',
                                     }}
                               >
                                     <button
