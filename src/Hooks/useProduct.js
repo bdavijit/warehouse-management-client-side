@@ -7,7 +7,7 @@ const useProducts = () => {
 
       useEffect(() => {
             SetLoading(true);
-            fetch('http://localhost:5001/products')
+            fetch('https://intense-basin-16370.herokuapp.com/products')
                   .then((res) => res.json())
                   .then((data) => {
                         console.log(data);

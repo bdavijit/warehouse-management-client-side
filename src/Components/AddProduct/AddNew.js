@@ -1,7 +1,7 @@
 import React from 'react';
 import useFirebase from '../../Hooks/useFirebase';
 import Login from '../Login/Login';
-import './AddNew.css'
+import './AddNew.css';
 //   name: updatedProduct.name,
 //   image: updatedProduct.image,
 //   description: updatedProduct.description,
@@ -37,7 +37,7 @@ const AddNew = () => {
                   sold,
             };
 
-                    fetch('http://localhost:5001/Product', {
+                    fetch('https://intense-basin-16370.herokuapp.com/Product', {
                           method: 'POST',
                           headers: {
                                 'content-type': 'application/json',

@@ -16,7 +16,7 @@ const ProductCard2 = (props) => {
       const DeleteProduct = (id) => {
             const proceed = window.confirm('Are you sure you want to delete?');
             if (proceed) {
-                  const url = `http://localhost:5001/Product/${id}`;
+                  const url = `https://intense-basin-16370.herokuapp.com/Product/${id}`;
                   fetch(url, {
                         method: 'DELETE',
                   })

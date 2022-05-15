@@ -8,7 +8,7 @@ const BlogDetail = () => {
   const [blogs, SetBlogs] = useState([]);
 
   useEffect(() => {
-        fetch('http://localhost:5001/blogs')
+        fetch('https://intense-basin-16370.herokuapp.com/blogs')
               .then((res) => res.json())
               .then((data) => {
                     console.log(data);

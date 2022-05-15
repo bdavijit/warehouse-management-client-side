@@ -13,7 +13,7 @@ const Inventory = () => {
       const [Products, set_Products] = useState({});
       useEffect(() => {
             SetLoading(true);
-            const url = `http://localhost:5001/products/${Id}`;
+            const url = `https://intense-basin-16370.herokuapp.com/products/${Id}`;
             fetch(url)
                   .then((res) => res.json())
                   .then((data) => {
@@ -38,7 +38,7 @@ const Inventory = () => {
             }
             // send data to the server
              SetLoading(true);
-            const url = `http://localhost:5001/AddProduct/${Id}`;
+            const url = `https://intense-basin-16370.herokuapp.com/AddProduct/${Id}`;
             fetch(url, {
                   method: 'PUT',
                   headers: {
@@ -66,7 +66,7 @@ const Inventory = () => {
 
                   // send data to the server
                    SetLoading(true);
-                  const url = `http://localhost:5001/Product/${Id}`;
+                  const url = `https://intense-basin-16370.herokuapp.com/Product/${Id}`;
                   fetch(url, {
                         method: 'PUT',
                         headers: {
