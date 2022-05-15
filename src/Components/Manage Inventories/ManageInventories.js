@@ -44,7 +44,7 @@ const ManageInventories = () => {
                               <div className='ProductBox mt-3'>
                                     {Products?.map((Product) => (
                                           <ProductCard2
-                                                key={Product.id}
+                                                key={Product._id}
                                                 Products={Products}
                                                 Product={Product}
                                                 SetProducts={SetProducts}

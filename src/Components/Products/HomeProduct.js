@@ -13,7 +13,7 @@ const HomeProduct = () => {
                 <div className='ProductBox mt-3'>
                       {HomeProducts?.map((Product) => (
                             <ProductCard
-                                  key={Product.id}
+                                  key={Product._id}
                                   Product={Product}
                             ></ProductCard>
                       ))}
