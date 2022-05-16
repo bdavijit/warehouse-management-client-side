@@ -1,4 +1,4 @@
-#IQBAL's Cuisine
+#Grocery HUB
 Live Site: https://router-firebase-integrat-3357a.web.app
 
 Features
@@ -9,6 +9,8 @@ Features
 5. unique animation  at "/blogs"
 6. footer
 7. google map location
+8. mongodb crud operations
+9. mongodb query
 
 
 Technology:
@@ -19,7 +21,8 @@ Technology:
 5. react-toastify
 6. web-vitals
 7. react-dom etc
-
+8. mongodb
+9. Nodejs 
 
 
 
